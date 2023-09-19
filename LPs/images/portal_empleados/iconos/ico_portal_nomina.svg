@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <g id="ico_portal_nomina" transform="translate(-66 -1258)">
+    <g id="Rectangle_17134" data-name="Rectangle 17134" transform="translate(66 1258)" fill="#fff" stroke="#fff" stroke-width="1">
+      <rect width="150" height="150" stroke="none"/>
+      <rect x="0.5" y="0.5" width="149" height="149" fill="none"/>
+    </g>
+    <g id="ico-manuales" transform="translate(21.006 1235.303)">
+      <path id="Path_2135" data-name="Path 2135" d="M177.92,214.13h61.455v3.125H177.92Z" transform="translate(-88.652 -127.081)" fill="#33b5e5"/>
+      <path id="Path_2136" data-name="Path 2136" d="M177.92,275.38h61.455V278.5H177.92Z" transform="translate(-88.652 -177.394)" fill="#33b5e5"/>
+      <path id="Path_2137" data-name="Path 2137" d="M177.92,336.63h61.455v3.125H177.92Z" transform="translate(-88.652 -227.707)" fill="#33b5e5"/>
+      <path id="Path_2138" data-name="Path 2138" d="M177.92,397.88h61.455V401H177.92Z" transform="translate(-88.652 -278.02)" fill="#33b5e5"/>
+      <path id="Path_2139" data-name="Path 2139" d="M78,138.2h83.981a8.006,8.006,0,0,0,8.006-8.006V77.227a8.006,8.006,0,0,0-8.006-8.006H125.658l-3.8-5.634a9.444,9.444,0,0,0-7.837-4.162H70v70.765A8.006,8.006,0,0,0,78,138.2Zm36.02-75.647a6.335,6.335,0,0,1,5.249,2.787l2.622,3.884H78a7.939,7.939,0,0,0-4.881,1.7V62.55Zm-40.9,14.678A4.886,4.886,0,0,1,78,72.347h83.981a4.888,4.888,0,0,1,4.884,4.881v52.964a4.888,4.888,0,0,1-4.881,4.881H78a4.888,4.888,0,0,1-4.881-4.881Z" fill="#152049"/>
+    </g>
+  </g>
+</svg>

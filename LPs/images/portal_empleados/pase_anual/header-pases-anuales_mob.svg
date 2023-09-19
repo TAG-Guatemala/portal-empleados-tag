@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="414" height="200" viewBox="0 0 414 200">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_17186" data-name="Rectangle 17186" width="414" height="200" transform="translate(0 50)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="header-pases-anuales_mob" transform="translate(0 -50)">
+    <g id="imagen-header-pases-anuales" clip-path="url(#clip-path)">
+      <rect id="Rectangle_17187" data-name="Rectangle 17187" width="414" height="229" transform="translate(0 44)" fill="#00a1ed"/>
+    </g>
+    <g id="ultimas_noticias" data-name="ultimas noticias" transform="translate(-29 -449.5)">
+      <text id="Place_holder" data-name="Place holder" transform="translate(71 569.5)" fill="#fff" font-size="50" font-family="Avenir-Medium, Avenir" font-weight="500"><tspan x="0" y="50">Pases</tspan><tspan x="0" y="98">anuales</tspan></text>
+    </g>
+    <g id="Rectangle_17188" data-name="Rectangle 17188" transform="translate(21 68)" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="10">
+      <rect width="372" height="167" rx="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="371" height="166" rx="9.5" fill="none"/>
+    </g>
+  </g>
+</svg>

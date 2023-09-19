@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="47" viewBox="0 0 86 47">
+  <defs>
+    <filter id="circle" x="0" y="0" width="47" height="47" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Switch-flight-off" transform="translate(-137.086 -354)">
+    <rect id="bg-switch" width="80" height="35" rx="17.5" transform="translate(143.086 357)" fill="#bcbcbc"/>
+    <g transform="matrix(1, 0, 0, 1, 137.09, 354)" filter="url(#circle)">
+      <circle id="circle-2" data-name="circle" cx="14.5" cy="14.5" r="14.5" transform="translate(9 6)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

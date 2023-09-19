@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="47" viewBox="0 0 47 47">
+  <defs>
+    <filter id="circle" x="0" y="0" width="47" height="47" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="on-switch" transform="translate(-182.086 -354)">
+    <g transform="matrix(1, 0, 0, 1, 182.09, 354)" filter="url(#circle)">
+      <circle id="circle-2" data-name="circle" cx="14.5" cy="14.5" r="14.5" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="ico_flight_selct-flight" d="M13.8,1.229l.017-.495A.708.708,0,0,0,13.083,0l-.495.017a.673.673,0,0,0-.426.171L8.273,3.429l-7.062-.58A.642.642,0,0,0,.7,3.037l-.7.7,5.612,2.7L3.019,9.348l-2,.1a.275.275,0,0,0-.222.1l-.273.273,2.32,1.143,1.143,2.32.273-.273a.3.3,0,0,0,.1-.222l.085-2.013L7.4,8.171l2.712,5.612.7-.7A.642.642,0,0,0,11,12.572l-.58-7.062,3.241-3.889A.892.892,0,0,0,13.8,1.229Z" transform="translate(205.833 365) rotate(45)" fill="#5db85c"/>
+  </g>
+</svg>

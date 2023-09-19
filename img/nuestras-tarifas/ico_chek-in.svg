@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="ico_chek-in" transform="translate(-107 -551)">
+    <rect id="bg" width="60" height="60" transform="translate(107 551)" fill="#fff"/>
+    <rect id="Rectangle_17157" data-name="Rectangle 17157" width="21" height="36" rx="2" transform="translate(127 563)" fill="#152049"/>
+    <g id="Rectangle_17158" data-name="Rectangle 17158" transform="translate(128 564)" fill="#152049" stroke="#fff" stroke-width="0.5">
+      <rect width="19" height="34" rx="2" stroke="none"/>
+      <rect x="0.25" y="0.25" width="18.5" height="33.5" rx="1.75" fill="none"/>
+    </g>
+    <circle id="Ellipse_41" data-name="Ellipse 41" cx="6" cy="6" r="6" transform="translate(131.47 575.242)" fill="#00a1ed"/>
+    <path id="Union_5" data-name="Union 5" d="M-2913.879,341.657h0l-2.122-2.121.707-.707,2.121,2.122,4.95-4.95.707.707-5.656,5.656Z" transform="translate(3049.758 242.879)" fill="#fff"/>
+    <rect id="Rectangle_17159" data-name="Rectangle 17159" width="8" height="2" rx="1" transform="translate(134 564)" fill="#fff"/>
+  </g>
+</svg>

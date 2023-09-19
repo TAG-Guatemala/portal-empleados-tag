@@ -1,0 +1,160 @@
+:root {
+    --tag-blue-light: #00A1ED;
+    --tag-blue-dark: #152049;
+    --tag-gray-bg: #B1B1B1;
+    --tag-gray-lines: #7F8081;
+    --tag-text-white: #FFFFFF;
+}
+
+.tag-title-bicolor {
+    font: normal normal 300 30px/30px Avenir;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.tag-title-bicolor span {
+    font: normal normal 300 30px/30px Avenir;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    opacity: 1;
+    color: var(--tag-blue-light);
+    margin: 0;
+}
+
+.tag-display-mobil {
+    display: block;
+}
+
+.tag-display-desk {
+    display: none;
+}
+
+.tag-nosotros-m-botom {
+    margin-bottom: 7%;
+}
+
+.tag-nosotros-m-botom3 {
+    margin-bottom: 3%;
+}
+
+.tag-tarifas-nombre {
+    margin-bottom: 10%;
+}
+
+.tag-tarifas-title {
+    font: normal normal 900 24px/24px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-tarifa-linea {
+    width: 80px;
+    height: 3px !important;
+    margin-top: 0;
+}
+
+.tag-tarifa-linea.tag-gray {
+    background: var(--tag-gray-lines);
+}
+
+.tag-tarifa-linea.tag-blue-light {
+    background: var(--tag-blue-light);
+}
+
+.tag-tarifa-linea.tag-blue {
+    background: var(--tag-blue-dark);
+}
+
+.tag-tarifas-card {
+    box-shadow: 0px 3px 6px #00000029;
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    max-height: 80px;
+    margin-bottom: 5%;
+}
+
+.tag-tarifa-ico {
+    width: 100%;
+    max-width: 45px;
+}
+
+.tag-tarifas-info {
+    margin-bottom: 0;
+    font: normal normal medium 16px/18px Aeonik Pro;    
+    letter-spacing: 0px;
+}
+
+.tag-tarifas-subinfo {
+    font: normal normal 300 14px/16px Aeonik Pro;
+    letter-spacing: 0px;
+    color: var(--tag-blue-light);
+}
+
+.tag-txt-blue-light {
+    color: var(--tag-blue-light);
+}
+
+.tag-txt-white {
+    color: var(--tag-text-white);
+}
+
+.tag-text-star {
+    text-align: start !important;
+}
+
+.tag-tabla-cargos th.tag-bg-flexi,
+.tag-tabla-cargos th.tag-bg-light,
+.tag-tabla-cargos th.tag-bg-plus,
+.tag-tabla-cargos td.tag-bg-flexi,
+.tag-tabla-cargos td.tag-bg-light,
+.tag-tabla-cargos td.tag-bg-plus {
+    color: var(--tag-text-white) !important;
+    text-align: center;
+    font: normal normal medium 16px/50px Avenir;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.tag-tabla-cargos .tag-td-border-none {
+    border-bottom-width: 0px;
+}
+
+.tag-tabla-cargos td {
+    border-bottom-width: 2px;
+}
+
+.tag-tabla-cargos td {
+    text-align: center;
+}
+
+.tag-bg-light {
+    background-color: var(--tag-gray-bg) !important;
+}
+
+.tag-bg-flexi {
+    background-color: var(--tag-blue-light) !important;
+}
+
+.tag-bg-plus {
+    background-color: var(--tag-blue-dark) !important;
+}
+
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    .tag-display-mobil {
+        display: none;
+    }
+    
+    .tag-display-desk {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}

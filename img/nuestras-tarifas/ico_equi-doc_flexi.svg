@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="ico_equi-doc_flexi" transform="translate(16.411 3.368)">
+    <rect id="bg" width="60" height="60" transform="translate(-16.411 -3.368)" fill="#fff"/>
+    <path id="Path_3392" data-name="Path 3392" d="M231.429,14.385h-1.471V1.967A1.962,1.962,0,0,0,228,0h-7.842a1.961,1.961,0,0,0-1.961,1.962V14.385h-1.471a5.891,5.891,0,0,0-5.88,5.879V43.909a5.891,5.891,0,0,0,5.88,5.879h14.713a5.89,5.89,0,0,0,5.88-5.885V20.265a5.89,5.89,0,0,0-5.885-5.879ZM219.5,3.111h9.149V14.385H219.5Z" transform="translate(-210.842 -0.005)" fill="#152049"/>
+    <path id="Path_3393" data-name="Path 3393" d="M268.99,247.38h15.547v1.308H268.99Z" transform="translate(-263.459 -223.851)" fill="#00a1ed"/>
+    <path id="Path_3394" data-name="Path 3394" d="M268.99,329.81h15.547v1.308H268.99Z" transform="translate(-263.459 -298.44)" fill="#00a1ed"/>
+    <path id="Path_3395" data-name="Path 3395" d="M268.99,412.25h15.547v1.308H268.99Z" transform="translate(-263.459 -373.039)" fill="#00a1ed"/>
+    <path id="Path_3396" data-name="Path 3396" d="M257.466,525.68h.142a.966.966,0,0,1,.9.9v1.466a.9.9,0,0,1-.9.9h-.142a.966.966,0,0,1-.9-.9v-1.466A.9.9,0,0,1,257.466,525.68Z" transform="translate(-252.218 -475.68)" fill="#00a1ed"/>
+    <path id="Path_3397" data-name="Path 3397" d="M422.4,525.68h.142a.966.966,0,0,1,.9.9v1.466a.9.9,0,0,1-.9.9H422.4a.966.966,0,0,1-.9-.9v-1.466A.9.9,0,0,1,422.4,525.68Z" transform="translate(-401.46 -475.68)" fill="#00a1ed"/>
+  </g>
+</svg>

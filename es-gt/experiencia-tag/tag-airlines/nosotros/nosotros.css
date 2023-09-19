@@ -1,0 +1,26 @@
+.tag-nosotros-m-botom {
+    margin-bottom: 10%;
+}
+
+.tag-card-modelos {
+    max-width: 344px;
+}
+
+.tag-card-avion {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8%;
+    height: 99px;
+    width: 100%;
+    align-items: center;
+}
+
+.tag-card-avion-info {
+    width: auto;
+    max-width: 344px;
+    margin: auto;
+}
+
+.tag-card-avion-descripcion {
+    height: 135px;
+}

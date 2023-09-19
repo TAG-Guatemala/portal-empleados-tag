@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <g id="ico_portal_nomina" transform="translate(-66 -1258)">
+    <g id="Rectangle_17134" data-name="Rectangle 17134" transform="translate(66 1258)" fill="#fff" stroke="#fff" stroke-width="1">
+      <rect width="150" height="150" stroke="none"/>
+      <rect x="0.5" y="0.5" width="149" height="149" fill="none"/>
+    </g>
+    <g id="ico" transform="translate(-68.306 1249.973)">
+      <path id="Path_2160" data-name="Path 2160" d="M240.18,127.627V59.915a1.716,1.716,0,0,1,3.433,0v69.428a1.717,1.717,0,0,1-1.717,1.715h-65.18A1.716,1.716,0,0,1,175,129.342V36.718A1.716,1.716,0,0,1,176.716,35h42.136a1.714,1.714,0,1,1,0,3.429H178.433v89.2Z" transform="translate(0 -0.003)" fill="#152049" fill-rule="evenodd"/>
+      <path id="Path_2161" data-name="Path 2161" d="M415.931,58.7l-23.043-23.2a1.715,1.715,0,0,0-2.434,2.418l23.043,23.2a1.715,1.715,0,0,0,2.434-2.418Z" transform="translate(-172.818 -0.001)" fill="#33b5e5" fill-rule="evenodd"/>
+      <path id="Path_2162" data-name="Path 2162" d="M388.434,59.014h22.3a1.715,1.715,0,1,1,0,3.43H386.718A1.714,1.714,0,0,1,385,60.73V36.716a1.715,1.715,0,1,1,3.431,0Z" transform="translate(-168.837)" fill="#33b5e5" fill-rule="evenodd"/>
+      <path id="Path_2163" data-name="Path 2163" d="M341.23,334.212v15.437a1.716,1.716,0,0,0,3.431,0V334.212a1.716,1.716,0,1,0-3.431,0Z" transform="translate(-133.644 -239.178)" fill="#33b5e5" fill-rule="evenodd"/>
+      <path id="Path_2164" data-name="Path 2164" d="M319.013,371.88H303.576a1.715,1.715,0,1,0,0,3.431h15.436a1.715,1.715,0,1,0,0-3.431Z" transform="translate(-101.992 -270.842)" fill="#33b5e5" fill-rule="evenodd"/>
+      <path id="Path_2165" data-name="Path 2165" d="M283.15,297.5a16.295,16.295,0,1,0,16.295,16.295A16.3,16.3,0,0,0,283.15,297.5Zm0,3.43a12.864,12.864,0,1,1-12.864,12.864A12.872,12.872,0,0,1,283.15,300.931Z" transform="translate(-73.849 -211.042)" fill="#33b5e5" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

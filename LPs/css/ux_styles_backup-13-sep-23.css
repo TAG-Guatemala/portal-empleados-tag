@@ -1,0 +1,3186 @@
+@charset "UTF-8";
+
+
+/* FONTS */
+@import url('../fonts/stylesheet.css');
+
+:root {
+    --tag-black-txt: #152049;
+    --tag-bg-blue-dark: #152049;
+    --tag-bg-blue-ultra-light: #F2FAFE;
+    --tag-bg-green-lime: #5DB85C;
+    --tag-blue-light: #00A1ED;
+    --tag-white: #FFFFFF;
+    --tag-gray-white: #F0F0F0;
+    --tag-gray-fly: #8E969B;
+    --tag-gray-light: #A9B6C6;
+    --tag-gray-inactive: #90A4AF;
+    --tag-gray-ultra-light: #7F7F7F;
+    --tag-red-error: #C90019;
+    --tag-gray-border: #8FB5BF;
+}
+
+*, body {
+    font-family: 'Avenir';
+    color: var(--tag-black-txt);
+}
+
+p {
+    font: normal normal 300 14px/24px Avenir;
+    color: var(--tag-black-txt);
+}
+
+h1 {
+    font: normal normal 300 30px/50px Avenir;
+}
+
+b {
+    font: normal normal 900 14px/19px Avenir;
+    letter-spacing: 0px;
+}
+
+/****** Clases: Todas las clases deben de iniciar con la palabra .tag unidas por guión con una palabra clave referente a su función ******/
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.tag-hidden-mobile {
+    display: none !important;
+}
+
+.tag-hidden-desk {
+    display: flex !important;
+}
+
+.tag-txt-bold {
+    font: normal normal 900 14px/19px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-bg-bd {
+    background-color: var(--tag-bg-blue-dark);
+}
+
+.tag-bg-ultra-light {
+    background-color: var(--tag-bg-blue-ultra-light);
+}
+
+.tag-bg-blue-light {
+    background-color: var(--tag-blue-light) !important;
+}
+
+.tag-bg-gray-fly {
+    background-color: var(--tag-gray-fly);
+}
+
+.tag-bg-gray-light {
+    background-color: var(--tag-gray-light);
+}
+
+.tag-bg-gray-inactive {
+    background-color: var(--tag-gray-inactive);
+}
+
+.tag-bg-gray-ultra-light {
+    background-color: var(--tag-gray-ultra-light);
+}
+
+.tag-txt-black {
+    color: var(--tag-bg-blue-dark);
+}
+
+.tag-txt-blue-dark {
+    color: var(--tag-bg-blue-dark) !important;
+}
+
+.tag-txt-blue-light {
+    color: var(--tag-blue-light) !important;
+}
+
+.tag-txt-white {
+    color: var(--tag-white) !important;
+}
+
+.tag-tag-gray-fly {
+    color: var(--tag-gray-fly);
+}
+
+.tag-txt-gray-light {
+    color: var(--tag-gray-light) !important;
+}
+
+.tag-txt-gray-inactive {
+    color: var(--tag-gray-inactive) !important;
+}
+
+.tag-txt-gray-ultra-light {
+    color: var(--tag-gray-ultra-light) !important;
+}
+
+.tag-txt-error {
+    color: var(--tag-red-error);
+}
+
+.tag-h-100 {
+    height: 100%;
+}
+
+.tag-margin-0-auto {
+    margin: 0 auto;
+}
+
+.tag-div-line-tp {
+    border-top: 1px solid var(--tag-gray-light);
+}
+
+.tag-div-line-bt {
+    border-bottom: 1px solid var(--tag-gray-light);
+}
+
+.tag-div-line-rg {
+    border-right: 1px solid var(--tag-gray-light);
+}
+
+.tag-div-line-lf {
+    border-left: 1px solid var(--tag-gray-light);
+}
+
+.tag-border-wht {
+    border: 1px solid var(--tag-white) !important;
+}
+
+.tag-redesign-container {
+    max-height: 400px;
+    margin-top: 100px !important;
+}
+
+.tag-btn {
+    border-radius: 0px;
+    padding: 10px 15px;
+}
+
+.tag-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-flex-sm-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-flex-md-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tag-flex-lg-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-flex-xl-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-flex-xxl-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-justify-around-center {
+    justify-content: center;
+}
+
+.tag-margin-0 {
+    margin: 0%;
+}
+
+.tag-margin-0-lf {
+    margin-left: 0%;
+}
+
+.tag-margin-0-rht {
+    margin-right: 0%;
+}
+
+.tag-margin-0-top {
+    margin-top: 0%;
+}
+
+.tag-margin-0-btm {
+    margin-bottom: 0%;
+}
+
+.tag-only-desk {
+    display: none;
+}
+
+.tag-only-mobile {
+    display: block;
+}
+
+.tag-flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.tag-modal-icon-close {
+    position: relative;
+    left: 115px;
+    top: -18px;
+}
+
+.tag-border-botom {
+    padding: 5px 15px;
+    border-bottom: 0.5px solid var(--tag-gray-light);
+}
+
+.tag-line-division {
+    margin: 20px auto;
+}
+
+.tag-btns-container {
+    margin: 50px 0;
+}
+
+/* Header */
+
+.tag-header-basic {
+    top: 0px;
+    left: 0px;
+    max-width: 1336px;
+    height: 50px;
+    background: var(--tag-bg-blue-dark) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.tag-header-basic img {
+    width: 100%;
+    max-width: 100px;
+}
+
+/* Inputs form */
+
+.tag-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    height: 50px;
+}
+
+.tag-input.question {
+    background: url(../images/icons/ToolTip.svg) no-repeat right center;
+    background-size: auto 30%;
+    background-position-y: 25px;
+    background-position-x: 95%;
+}
+
+.tag-input.form-floating>label {
+    font: normal normal 300 18px/20px Avenir;
+}
+
+.tag-input.form-floating>.form-control:focus,
+.tag-input.form-floating>.form-control:not(:placeholder-shown),
+.tag-input.form-floating>.form-control-plaintext:focus,
+.tag-input.form-floating>.form-control-plaintext:not(:placeholder-shown) {
+    font: normal normal 300 10px/20px Avenir;
+}
+
+
+/* Buttons */
+.tag-btn {
+    border-radius: 0;
+    border: none;
+    height: 50px;
+    opacity: 1;
+    text-align: center;
+    font-family: "Avenir";
+    letter-spacing: 0px;
+    color: var(--tag-white);
+    text-transform: uppercase;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-btn-blue-light {
+    background-color: var(--tag-blue-light);
+}
+
+.tag-airlines-btn-bg-empty {
+    /* width: 189px; */
+    height: 34px;
+    border: 1px solid #33B5E5;
+    background-color: var(--tag-white);
+    text-transform: inherit;
+    color: #33B5E5;
+    text-align: center;
+    font: normal normal 300 14px/50px Avenir;
+    display: flex;
+}
+
+/* Checks Switch*/
+
+.tag-check-big,
+.tag-check-medium,
+.tag-check-small {
+    display: flex;
+    align-items: center;
+}
+
+
+.tag-check-big.form-switch .form-check-input {
+    width: 80px;
+    height: 35px;
+    background-image: url(../images/icons/ico_check_inactive.svg);
+    /* background-image: url(../images/icons/big-switch/circle-on.svg); */
+}
+
+.tag-check-big.form-switch .form-check-input:checked {
+    background-position: right center;
+    background-image: url(../images/icons/big-switch/circle-on.svg);
+    background-position: right -11% bottom 73%;
+    background-size: 42px;
+    transition: background-position 0.15s ease-in-out;
+}
+
+
+.tag-check-medium.form-switch .form-check-input {
+    width: 44px;
+    height: 24px;
+    background-image: url(../images/icons/ico_check_inactive.svg);
+}
+
+.tag-check-small.form-switch .form-check-input {}
+
+.tag-check-big .form-check-input,
+.tag-check-medium .form-check-input,
+.tag-check-small .form-check-input {
+    background-color: var(--tag-gray-inactive);
+    border-color: var(--tag-gray-inactive);
+}
+
+.tag-check-big .form-check-input:checked,
+.tag-check-medium .form-check-input:checked,
+.tag-check-small .form-check-input:checked {
+    background-color: var(--tag-bg-green-lime);
+    border-color: var(--tag-bg-green-lime);
+}
+
+.tag-check-big .form-check-label,
+.tag-check-medium .form-check-label,
+.tag-check-small .form-check-label {
+    font: normal normal 900 16px/22px Avenir;
+    margin-left: 15px;
+}
+
+.tag-check-medium {}
+
+.tag-check-small {}
+
+/* Styles Modal  */
+
+.modal-icon-colse {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+
+/****** Clases especiales son muy específicas, casos de uso: 
+    - Solo se usan una vez.
+    - Son especificas para un ajuste en específico
+    - Pueden usar o no la palabra tag para iniciar la clase
+******/
+
+
+.tag-redesign-logo {
+    margin-bottom: 125px;
+}
+
+.tag-redesign-logo img {
+    width: 100%;
+    max-width: 60%;
+    margin-top: 20px;
+}
+
+.tag-redesign-actions {
+    padding-left: 35px;
+}
+
+.tag-redesign-actions h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+.tag-redesign-actions span,
+.tag-redesign-actions a {
+    font-weight: 100;
+}
+
+.tag-redesign-actions span {
+    margin: 40px 0;
+}
+
+.tag-redesign-actions a {
+    margin: 20px 0 10px 0;
+    padding: 10px 15px;
+}
+
+.tag-redesign-actions a:nth-child(1) {
+    margin-top: 40px;
+}
+
+.tag-login {
+    padding-left: 0px;
+}
+
+.tag-login-imgSales {
+    position: absolute;
+    width: 101%;
+    right: 0px;
+}
+
+.tag-salesWrp-global {
+    width: 100%;
+}
+
+.tag-salesWrp {
+    width: 100%;
+    margin-top: 170px;
+}
+
+.tag-login-mobile {
+    height: 170px;
+    width: 581px;
+    object-fit: cover;
+}
+
+.tag-sales a {
+    font: normal normal 300 11px/20px Avenir;
+    color: var(--tag-gray-inactive);
+}
+
+.tag-sales a.tag-sales-active {
+    color: var(--tag-bg-blue-dark);
+}
+
+.tag-login .tag-login-container {
+    margin: 20px;
+}
+
+.tag-login .tag-login-container h1,
+.tag-login .tag-login-container h3 {
+    text-align: center;
+}
+
+.tag-login .tag-login-container h1 {
+    font: normal normal 300 30px/50px Avenir;
+    margin: 20px 0;
+
+}
+
+.tag-login .tag-login-container h3 {
+    font: normal normal 300 20px/27px Avenir;
+    margin: 20px 0;
+}
+
+.tag-login .tag-login-container form {
+    margin: 20px 0;
+}
+
+.tag-login .tag-login-container form .tag-login-cont-inputs {
+    width: 100%;
+}
+
+.tag-login .tag-login-container form input {
+    margin-bottom: 15px;
+}
+
+.tag-login .tag-login-container form a {
+    margin: 20px 0;
+}
+
+.tag-login .tag-login-container-txt p {
+    font: normal normal 300 14px/24px Avenir;
+}
+
+.tag-modal-chek-in .modal-dialog,
+.tag-modal-error .modal-dialog,
+.tag-modals .modal-dialog {
+    margin-top: 30px;
+}
+
+
+.tag-modals .modal-content {
+    border-top: 3px solid var(--tag-blue-light);
+    border-radius: 0;
+}
+
+.tag-modal-error .modal-content {
+    border-top: 3px solid var(--tag-red-error);
+    width: 100%;
+    border-radius: initial;
+}
+
+/* .tag-modal-chek-in img {
+    width: 100%;
+    max-width: 62px;
+    height: 52px;
+    margin-right: 10px;
+}
+
+.tag-modal-chek-in img.tag-modal-services {
+    width: 100%;
+    max-width: 126px;
+    height: 33px;
+    margin-right: 10px;
+} */
+
+.tag-modals .tag-modal-ico {
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.tag-modals .tag-modal-ico.tag-modal-ico-menores {
+    width: 100%;
+    max-width: 62px;
+    height: 52px;
+}
+
+.tag-modals .tag-modal-ico.tag-modal-services {
+    width: 100%;
+    max-width: 126px;
+    height: 33px;
+    margin-right: 10px;
+}
+
+
+.tag-modals h1 {
+    font: normal normal normal 16px/22px Avenir;
+}
+
+.tag-modal-chek-in .modal-header,
+.tag-modal-error .modal-header {
+    border: none;
+}
+
+.tag-modal-chek-in .tag-btn-modal-cerrar {
+    background: none;
+    width: 100%;
+    max-width: 160px;
+    height: 40px;
+    border: 1px solid var(--tag-blue-light);
+    opacity: 1;
+    color: var(--tag-blue-light);
+    border-radius: initial;
+}
+
+.tag-modal-error .tag-btn-modal-cerrar {
+    background: none;
+    width: 100%;
+    max-width: 160px;
+    height: 40px;
+    border: 1px solid var(--tag-gray-ultra-light);
+    opacity: 1;
+    color: var(--tag-gray-ultra-light);
+    border-radius: initial;
+}
+
+.tag-modal-chek-in .modal-footer,
+.tag-modal-error .modal-footer {
+    border: none;
+}
+
+
+
+.tag-info-fly-date {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.tag-info-fly-date .tag-info-fly-day {
+    text-align: center;
+    font: normal normal normal 18px/25px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-box-info-fly {
+    box-shadow: 0px 2px 3px #00000031;
+    border: 0.5px solid var(--tag-gray-light);
+    opacity: 1;
+}
+
+.tag-info-fly .tag-info-fly-subtitle {
+    text-align: center;
+    font: normal normal medium 24px/33px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap {
+    padding: 15px;
+    padding-bottom: 0%;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal,
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival {
+    font: normal normal 300 20px/27px Avenir;
+    letter-spacing: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal {
+    margin-bottom: 30px;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival {
+    margin-bottom: 15px;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal span,
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival span {
+    width: 100%;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal p,
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival p {
+    display: none;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-time {
+    display: none;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline,
+.tag-info-fly .tag-box-info-fly-bags {
+    display: none;
+}
+
+.tag-info-fly .tag-box-info-fly-bags .tag-img-eqipaje-mano {
+    margin-right: 5px;
+    width: 100%;
+    max-width: 12px;
+}
+
+.tag-info-fly .tag-box-info-fly-bags .tag-img-preferencial {
+    margin-right: 5px;
+    width: 100%;
+    max-width: 12px;
+}
+
+.tag-info-fly .tag-box-info-fly-bags .tag-img-equipaje-documentado {
+    margin-right: 5px;
+    width: 100%;
+    max-width: 20px;
+}
+
+.tag-info-fly .tag-box-info-fly-bags .tag-img-asistencia {
+    margin-right: 5px;
+    margin-left: 8px;
+    width: 100%;
+    max-width: 12px;
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline-checkbox {
+    width: 100%;
+    /* position: relative;
+    top: 83%; */
+}
+
+.tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline-checkbox .tag-check-big {
+    margin: 15px 0;
+}
+
+.tag-info-fly .tag-box-info-fly-img-date .tag-box-info-fly-img-date-text {
+    position: relative;
+    top: 35%;
+    height: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 90px;
+    width: 100%;
+}
+
+.tag-info-fly .tag-box-info-fly-img-date .tag-box-info-fly-img-date-text .tag-box-info-fly-img-date-day {
+    font: normal normal normal 16px/22px Avenir;
+    letter-spacing: 0.19px;
+    color: var(--tag-white);
+    text-shadow: 0px 3px 6px #0000007B;
+    opacity: 1;
+}
+
+.tag-info-fly .tag-box-info-fly-img-date .tag-box-info-fly-img-date-text .tag-box-info-fly-img-date-number-day {
+    text-align: center;
+    font: normal normal medium 34px/46px Avenir;
+    letter-spacing: 0.41px;
+    color: var(--tag-white);
+    text-shadow: 0px 3px 6px #0000007B;
+    opacity: 1;
+}
+
+.tag-info-fly .tag-box-info-fly-img-date .tag-box-info-fly-img-date-text .tag-box-info-fly-img-date-month {
+    text-align: center;
+    font: normal normal normal 16px/22px Avenir;
+    letter-spacing: 0.19px;
+    color: var(--tag-white);
+    text-shadow: 0px 3px 6px #0000007B;
+    opacity: 1;
+}
+
+.tag-info-fly .tag-box-info-fly-img-date img {
+    min-height: 200px;
+    object-fit: cover;
+    height: 100%;
+    position: relative;
+    top: -17px;
+    z-index: -1;
+}
+
+.tag-passengers-add .tag-passengers-add-info .tag-passengers-add-info-name {
+    font: normal normal 300 16px/22px Avenir;
+    margin-bottom: 0;
+}
+
+.tag-passengers-add .tag-passengers-add-info .tag-passengers-add-info-mail {
+    width: 100%;
+    font: normal normal 300 12px/16px Avenir;
+}
+
+.tag-passengers-add .tag-passengers-add-info .tag-passengers-add-info-type {
+    display: none;
+}
+
+.tag-passengers-add .tag-passengers-add-dates {
+    text-align: center;
+    text-decoration: underline;
+    font: normal normal 300 12px/16px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-passengers-add .tag-passengers-add-mail {
+    display: none;
+}
+
+.tag-passengers {
+    margin: 30px 0 50px 0;
+}
+
+.tag-passengers .tag-box-info-fly {
+    height: 100%;
+}
+
+.tag-passengers .tag-passengers-add .tag-passengers-add-resend {
+    display: none;
+}
+
+.tag-passengers .tag-checkin-btn-form {
+    display: none;
+}
+
+#modalRensend.tag-modal-chek-in .modal-content, .tag-modal-error .modal-content {
+    height: initial;
+}
+
+#modalRensend.tag-modal-chek-in .modal-content p {
+    font: normal normal normal 16px/22px Avenir;
+}
+
+#modalRensend.tag-modal-chek-in .modal-content .tag-modal-new-passenger {
+    margin: 20px 0;
+    width: 433px;
+    height: 62px;
+    background-color: var(--tag-gray-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modalRensend .tag-btn,
+#modalRensend .tag-btn-modal-cerrar {
+    width: 160px;
+    height: 40px;
+}
+
+.tag-btns-container .tag-btns-container-next {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.tag-btns-container .tag-btns-container-next a,
+.tag-btns-container .tag-btns-container-next button {
+    width: 100%;
+    height: 50px;
+    text-decoration-line: none;
+}
+
+.tag-btns-container .tag-airlines-btn-bg-empty {
+    height: 50px;
+}
+
+.tag-table-seating-scroll-x {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #D0D0D0;
+    ;
+}
+
+.tag-table-seating-scroll-x .tag-table-seating-scroll-x-container {
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+    margin-right: 25px;
+    /* max-width: 300px;
+    margin-left: 50px;
+    padding: 0 15px;*/
+    /* background-color: #F7F8F9; */
+}
+
+.tag-table-seating-scroll-x .tag-table-seating-scroll-x-container .tag-table-seating-title {
+    font: normal normal 300 10px/20px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-table-seating-scroll-x .tag-table-seating-scroll-x-container .tag-table-seating-body {
+    font: normal normal medium 16px/20px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-aditionals .tag-aditionals-h2 {
+    font: normal normal medium 24px/33px Avenir;
+    margin-bottom: 30px;
+}
+
+.tag-aditionals .tag-aditionals-dir-reverse {
+    flex-direction: column-reverse;
+}
+
+.tag-aditionals .tag-aditionals-dir-reverse .tag-aditionals-icon {
+    width: 46px;
+    height: 37px;
+}
+
+.tag-aditionals .tag-aditionals-dir-reverse .tag-aditionals-txt-check {
+    font: normal normal normal 18px/25px Avenir;
+    letter-spacing: 0px;
+    margin: 15px auto;
+}
+
+.tag-aditionals .tag-aditionals-info-content {
+    margin-top: 0px;
+}
+
+#modalCuidado .modal-dialog {
+    width: 100%;
+}
+
+#modalCuidado .modal-content .modal-header .modal-title {
+    margin-left: 15px;
+}
+
+#modalCuidado .modal-content .modal-header .tag-modal-icon-close {
+    position: relative;
+    left: 370px;
+    top: -18px;
+}
+
+#modalCuidado .modal-content .modal-body p {
+    margin-bottom: 0px;
+    font: normal normal normal 16px/22px Avenir;
+    letter-spacing: 0px;
+}
+
+#modalCuidado .modal-content .modal-body img {
+    width: 100%;
+    margin: 30px auto
+}
+
+#modalCuidado .modal-content .tag-btns-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#modalCuidado .modal-content .tag-btns-container button {
+    width: 100%;
+    max-width: 100%;
+}
+
+#modalCuidado .modal-content .tag-btns-container .tag-btn-modal-cerrar,
+#modalCuidado .modal-content .tag-btns-container .tag-btn-modal-continuar {
+    width: 100%;
+    max-width: 160px;
+    height: 40px;
+    opacity: 1;
+    border-radius: initial;
+}
+
+#modalCuidado .modal-content .tag-btns-container .tag-btn-modal-cerrar {
+    background: none;
+    border: 1px solid var(--tag-gray-ultra-light);
+    color: var(--tag-gray-ultra-light);
+}
+
+#modalCuidado .modal-content .tag-btns-container .tag-btn-modal-continuar {
+    background: var(--tag-blue-light);
+    border: 1px solid var(--tag-blue-light);
+    color: var(--tag-bg-blue-ultra-light);
+}
+
+.tag-card.tag-table-seating-scroll-x {
+    height: auto
+}
+
+.tag-card.tag-table-seating-scroll-x .tag-table-seating-scroll-x-container {
+    padding: 0;
+    margin-left: 3%;
+}
+
+.tag-card .tag-cards {
+    width: 100%;
+    max-width: 220px;
+    min-height: 237px;
+    margin: 3%;
+    box-shadow: 0px 3px 6px #0000004E;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+}
+
+.tag-card .tag-cards .card {
+    border: none;
+}
+
+.tag-card .tag-cards .tag-card-img {
+    width: 100%;
+    background: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    min-height: 151px;
+}
+
+.tag-card .tag-cards .tag-card-img .tag-bag-card {
+    width: 50px;
+}
+
+/* ***** */
+
+.tag-checkin-success-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.tag-checkin-success-ticket {
+    height: auto;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-wrap {
+    padding: 15px;
+    padding-bottom: 0%;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-wrap>div {
+    justify-content: center;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-terminal span,
+.tag-checkin-success-ticket .tag-box-info-fly-arrival span {
+    font: normal normal 300 20px/27px Avenir;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-terminal p,
+.tag-checkin-success-ticket .tag-box-info-fly-arrival p {
+    font: normal normal 300 14px/19px Avenir;
+    margin: 5px 0 3px 0;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-time {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: var(--tag-gray-fly);
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-time p {
+    margin-bottom: 0;
+    color: var(--tag-gray-fly);
+    text-align: center;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-time p span {
+    color: var(--tag-gray-fly);
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-airline {
+    display: block;
+    width: 100%;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-airline p {
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-bags {
+    display: flex;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-bags div p:first-child {
+    font: normal normal 900 12px/16px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-bags div p {
+    margin-bottom: 0;
+}
+
+.tag-checkin-success-ticket .tag-box-info-fly-img-date img {
+    min-height: 200px;
+    object-fit: cover;
+    height: 100%;
+    /* position: relative; */
+    top: -17px;
+    z-index: -1;
+}
+
+/******** Styles for LP's ********/
+
+.tag-lp {
+    margin-top: 15px;
+}
+
+.tag-title {
+    font: normal normal medium 36px/20px Avenir;
+    letter-spacing: 0px;
+}
+
+/******** Styles for LP Guatemala ********/
+
+.tag-lp-salesWrp {
+    position: absolute;
+}
+
+.tag-lp-image-full {
+    width: 100%;
+    background-image: url(../../public/images/guatemala-5.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    background-repeat: no-repeat;
+}
+
+.tag-lp-image-full::before {
+    content: "";
+    width: 100%;
+    min-height: 200px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: transparent linear-gradient(180deg, #FFFFFF00 60%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.tag-lp-title {
+    text-align: left;
+    font: normal normal 900 45px/62px Avenir;
+    letter-spacing: -0.01px;
+    color: var(--tag-bg-blue-dark);
+}
+
+.tag-lp-subtitle {
+    font: normal normal 900 20px/62px Avenir;
+}
+
+.tag-lp .tag-div-line-lf {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.tag-lp .tag-div-line-lf {
+    border-left: none;
+}
+
+.tag-lp .tag-div-line-lf p img {
+    width: 25px;
+    margin-right: 20px;
+}
+
+.tag-lp .tag-div-line-lf .tag-lp-p-zona-horaria {
+    padding-left: 45px;
+}
+
+.tag-lp-h3 {
+    font: normal normal 900 36px/40px Avenir;
+    letter-spacing: 0px;
+    margin-bottom: 50px;
+}
+
+.tag-lp-section {
+    margin-top: 30px;
+}
+
+.tag-lp-que-hacer .tag-lp-info {
+    margin-bottom: 15px;
+}
+
+.tag-lp-info-image {
+    padding-left: 15px;
+    font: normal normal normal 16px/24px Avenir;
+    padding-top: 15px;
+}
+
+.tag-lp-info-image h4 {
+    text-align: center;
+}
+
+.tag-lp-comida-info {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #A9B6C6;
+}
+
+.tag-bg-image-top {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    /* background-image: url(../../public/images/lp_encuentra_destino/Carrusel_web_promociones_Mobile_1.jpg); */
+}
+
+.tag-bg-image-top-empleados {
+    background-image: url(../images/paquetes/TGZ/paquetes-tuxtla.jpg);
+}
+
+/******** Styles for LP Encuentra Destino ********/
+
+.tag-encuentra-destino {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-image: url(../../public/images/lp_encuentra_destino/Carrusel_web_promociones_Mobile_1.jpg);
+}
+
+.tag-lp-encuentra-destino-opciones {
+    margin: 30px 0;
+}
+
+.tag-lp-encuentra-destino-title {
+    font: normal normal 900 18px/20px Avenir;
+}
+
+.tag-lp-encuentra-destino-select {
+    font: normal normal 900 18px/20px Avenir;
+    color: var(--tag-blue-light);
+    border: none;
+    border-bottom: 2px solid var(--tag-bg-blue-dark);
+    border-radius: 0;
+}
+
+.tag-lp-card {
+    border-radius: 0%;
+    border: none;
+}
+
+.tag-lp-card-img {
+    border-radius: unset;
+}
+
+.tag-lp-card-reserva {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tag-lp-encuentra-destino-card-text {
+    font: normal normal 300 30px/28px Avenir !important;
+    margin-bottom: 0;
+}
+
+.tag-lp-encuentra-destino-reserva>span {
+    font: normal normal 300 12px/28px Avenir;
+    color: var(--tag-gray-ultra-light);
+    position: relative;
+    top: -13px;
+    right: 14px;
+}
+
+.tag-lp-encuentra-destino-card-text>span {
+    font: normal normal 300 14px/28px Avenir;
+}
+
+.tag-lp-center-card-mobile {
+    display: flex;
+    justify-content: center;
+}
+
+/**** Estilos para tooltip ****/
+
+.tooltip-main {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-weight: 700;
+    background: #f3f3f3;
+    border: 1px solid #737373;
+    color: #737373;
+    margin: 4px 121px 0 5px;
+    float: right;
+    text-align: left !important;
+    z-index: 100;
+}
+
+.tooltip-qm {
+    float: left;
+    margin: -2px 0px 3px 4px;
+    font-size: 12px;
+    z-index: 100;
+}
+
+.tooltip-inner {
+    max-width: 562px !important;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000067;
+    border: 1px solid #A9B6C6;
+    opacity: 1;
+    text-align: left;
+    font: normal normal normal 15px/20px Avenir;
+    letter-spacing: 0px;
+    color: #152049;
+    opacity: 1;
+    padding: 10px 15px 10px 60px;
+    background: left 5% / 9% 100% no-repeat url("../images/icons/ico_checkin-info.png") #FFFFFF;
+    z-index: 100;
+}
+
+.tooltip.show {
+    opacity: 1;
+    z-index: 100;
+}
+
+.tag-lp-hr {
+    border-bottom: 1px solid #A9B6C6;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.tag-title-gastronomy {
+    font: normal normal 900 20px/24px Avenir;
+}
+
+.tag-container-video {
+    overflow: hidden;
+}
+
+.tag-loop-video {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: 160px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.tag-width-100-mobile {
+    width: 100%;
+}
+
+.tag-info-destino .tag-info-destino-content-text {
+    padding-top: 10px;
+    width: 81%;
+    margin: auto;
+}
+
+.tag-info-destino div p {
+    text-align: initial;
+}
+
+/* Formulario */
+
+.tag-form-cotiza
+
+.required {
+    color: var(--tag-red-error);
+}
+
+.tag-form-cotiza .tag-form-tile {
+    text-align: center;
+    font: normal normal 900 32px/20px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-form-cotiza .tag-p-form {
+    text-align: center;
+    font: normal normal normal 16px/24px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-form-cotiza .tag-form-inputs-container {
+    margin: auto;
+    justify-content: center;
+}
+
+.tag-form-cotiza .tag-form-input-cotiza {
+    height: 50px !important;
+    /* width: 300px; */
+}
+
+.tag-form-cotiza .tag-cotiza-subttit {
+    margin-left: 30px;
+}
+
+.tag-form-cotiza .tag-cotiza-contenedor {
+    margin: auto;
+}
+
+.tag-form-cotiza .form-floating>.form-control, 
+.tag-form-cotiza .form-floating>.form-select,
+.tag-form-cotiza .form-control.tag-input,
+.tag-form-cotiza .tag-container-select,
+.tag-form-cotiza .form-select,
+.tag-form-cotiza .tag-form-cont-date-picker input,
+.tag-form-cotiza .tag-form-cont-date-picker button {
+    background: #F5F7FB 0% 0% no-repeat padding-box;
+}
+
+.tag-form-cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.tag-form-cont > p,
+.tag-form-cont > div {
+    width: 100%;
+}
+
+.tag-form-cont > p {
+    text-align: center;
+    font: normal normal normal 14px/20px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-form-cont > p:first-child {
+    color: var(--tag-blue-light);
+}
+
+.tag-form-cont > p:last-child {
+    text-align: center;
+    font: normal normal normal 11px/20px Avenir;
+    letter-spacing: 0px;
+    color: #7F7F7F;
+}
+
+.tag-form-cont > .contador-infantes,
+.tag-form-cont > .contador-menores,
+.tag-form-cont > .contador-adultos,
+.tag-form-cont > .contador-habitaciones {
+    max-width: 131px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tag-form-cont .tag-textarea-count{
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: none;
+    resize: none;
+    text-align: center;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.contador-adultos .tag-info-total {
+    text-align: center;
+    font: normal normal normal 14px/19px Avenir;
+    letter-spacing: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-mobile-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-btn-sumar,
+.tag-btn-restar {
+    border-radius: 50%;
+    width: 34px;
+    background: var(--tag-bg-blue-dark);
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--tag-bg-blue-ultra-light);
+}
+
+.tag-container-select {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.tag-select-adultos select {
+    height: auto;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.tag-label-select {
+    color: var(--tag-blue-light);
+    font: normal normal normal 12px/20px Avenir;
+    width: 100%;
+    text-align: initial;
+}
+
+.tag-check-hosp {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .tag-check-hosp > div,
+.tag-check-hosp div p {
+    width: 100%;
+} */
+
+.tag-check-hosp .tag-check-img img {
+    width: 100%;
+    max-width: 210px;
+}
+
+.tag-pack-ico {
+    width: 50px;
+    height: auto;
+    /* max-height: 47px; */
+    margin-right: 15px;
+}
+
+.tag-lp-image-full.tag-bg-oax {
+    background-image: url(../images/OAX/oaxaca_tagairlines.jpg);
+    height: 200px
+}
+
+.lp-swiper-section .swiper-pagination {
+    position: initial;
+}
+
+.lp-swiper-section .swiper-slide {
+    width: 100%;
+    max-width: 370px;
+    height: 100%;
+    max-height: 205px;
+}
+
+.tag-cards-about {
+    width: 100%;
+    max-width: 370px;
+    box-shadow: 0px 3px 6px #00000029;
+    margin-bottom: 10%;
+}
+
+.tag-cards-about .card {
+    width: 100%;
+}
+
+.tag-cards-about .card > img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.tag-cards-about-head {
+    display: flex ;
+}
+
+.tag-cards-about-points {
+    width: 60px;
+    height: 21px;
+    background: var(--tag-blue-light);
+    border-radius: 10px;
+    color: var(--tag-white);
+    display: flex;
+    justify-content: center;
+}
+
+.tag-cards-about-points img {
+    width: 14px;
+    margin-right: 5%;
+}
+
+.tag-cards-about-points span {
+    color: var(--tag-white);
+    font-size: 14px;
+}
+
+.tag-cards-about-info-add {
+    padding: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.tag-cards-about-info-add span {
+    font: normal normal 900 14px/20px Avenir;
+}
+
+.tag-cards-about-info-add p {
+    font: normal normal normal 14px/20px Avenir;
+    margin-bottom: 0;
+}
+
+.tag-card-pack-cotiza {
+    width: 100%;
+    max-width: 370px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    margin-bottom: 10%;
+}
+
+.tag-card-pack-cotiza .card {
+    width: 100%;
+}
+
+.tag-card-pack-cotiza .card .tag-card-pack-cotiza-gead-img {
+    max-height: 205px;
+    object-fit: cover;
+}
+
+.tag-card-pack-cotiza .card .tag-card-pack-cotiza-day-info {
+    position: absolute;
+    right: 0%;
+    margin-top: 2%;
+    margin-right: 2%;
+    width: 200px;
+    height: 30px;
+    background: var(--tag-blue-light);
+    border-radius: 10px;
+    color: var(--tag-white);
+    text-align: center;
+    font: normal normal 900 16px/24px Avenir;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-card-pack-cotiza .card .tag-card-pack-cotiza-title {
+    font: normal normal 900 22px/20px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-card-pack-cotiza .card .tag-card-pack-cotiza-title-span {
+    margin-left: 2%;
+    font: normal normal medium 16px/20px Avenir !important;
+    letter-spacing: 0px;
+}
+
+.tag-card-pack-cotiza .card .tag-card-pack-cotiza-info {
+    display: flex;
+}
+
+.tag-card-pack-cotiza .card .tag-card-pack-cotiza-info p {
+    font: normal normal normal 16px/20px Avenir;    
+    letter-spacing: 0px;
+}
+
+.tag-card-pack-cotiza .card .tag-card-pack-cotiza-pay p {
+    margin-bottom: 0;
+} 
+
+.tag-card-pack-cotiza .card .tag-card-pack-cotiza-pay .tag-card-pack-cotiza-pay-desde {
+    font: normal normal normal 10px/20px Avenir;
+    letter-spacing: 0px;
+    color: var(--tag-gray-ultra-light);
+}
+
+.tag-card-pack-cotiza .card .tag-card-pack-cotiza-pay .tag-card-pack-cotiza-pay-money {
+    font: normal normal 900 26px/20px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-card-pack-cotiza .card .tag-card-pack-cotiza-pay .tag-card-pack-cotiza-pay-money span {
+    font: normal normal 900 16px/20px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-card-pack-cotiza .card .tag-card-pack-cotiza-btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tag-card-pack-cotiza .card .tag-card-pack-cotiza-btns .tag-card-pack-cotiza-btns-details {
+    height: 22px;
+    text-align: left;
+    font: normal normal normal 16px/20px Avenir;
+    letter-spacing: 0px;
+    color: var(--tag-bg-blue-dark);
+}
+
+.tag-card-pack-cotiza .card .tag-card-pack-cotiza-btns .tag-card-pack-cotiza-btns-cotizar {
+    font: normal normal 900 18px/20px Avenir;
+}
+
+/* Portal de empleados */
+
+.tag-empleados {
+    margin-top: 15px;
+}
+
+.tag-title-empleados {
+    font: normal normal medium 36px/20px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-title-empleados .tag-swiper-noticias {
+    width: 100%;
+}
+
+.tag-swiper-empleados-noticias .tag-swiper-img-noticias {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.tag-swiper-empleados-noticias .tag-swiper-noticias-date {
+    font: normal normal 300 14px/24px Avenir;
+    letter-spacing: 0px;
+    color: var(--tag-gray-ultra-light);
+    text-align: end;
+}
+
+.tag-swiper-empleados-noticias .tag-swiper-empleados-container-btns {
+    position: relative;
+    bottom: 230px;
+}
+
+.tag-swiper-empleados-noticias .swiper-button-next, 
+.tag-swiper-empleados-noticias .swiper-button-prev {
+    top: initial;
+    /* position: initial; */
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid #152049;
+    width: 64px;
+    height: 64px;
+    background: var(--tag-white);
+    opacity: 0.4;
+}
+
+.tag-swiper-empleados-noticias .swiper-button-prev {
+    left: -28px;
+}
+
+.tag-swiper-empleados-noticias .swiper-button-prev:after, 
+.tag-swiper-empleados-noticias .swiper-button-next:after {
+    font-size: 15px;
+    width: 9px;
+    color: #152049;
+}
+
+.tag-input-search {
+    width: 450px !important;
+    height: 40px;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    border: 1px solid #A9B6C6;
+    opacity: 1;
+}
+
+.tag-input-search .tag-input-search-icon {
+    position: absolute;
+    right: 58%;
+    top: 11%;
+    background: none;
+}
+
+.tag-input-search-icon :focus {
+    position: initial;
+}
+
+.tag-beneficios-card {
+    max-width: 200px;
+    height: 261px;
+    background: var(--tag-white) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    text-decoration-line: none;
+    border-top: 3px solid var(--tag-blue-light);
+}
+
+.tag-beneficios-card p {
+    text-align: left;
+    font: normal normal 300 22px/28px Avenir;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+}
+
+.tag-bg-header-img {
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.tag-bg-header-img .tag-bg-img {
+    width: 100%;
+    height: auto;
+}
+
+/***** TAG-LP-Pases Anuales ******/
+
+.tag-margin-lf-card {
+    margin-left: 2%;
+}
+
+.tag-lp-pases-card {
+    width: 180px;
+    height: 257px;
+    background: var(--tag-gray-white) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 9px solid var(--tag-blue-light);
+}
+
+.tag-lp-pases-card .tag-pases-card-header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 50px;
+}
+
+.tag-lp-pases-card .tag-pases-card-header .tag-title-card {
+    text-align: left;
+    font: normal normal 900 17px/23px Avenir;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+    height: 18px;
+}
+
+.tag-lp-pases-card .tag-pases-card-header .tag-title-card-img {
+    height: 18px;
+}
+
+.tag-lp-pases-card .tag-pases-card-header hr {
+    height: 2px;
+    width: 100%;
+}
+
+.tag-lp-pases-card .tag-pases-card-header > img {
+    width: 109px;
+    height: 18px;
+}
+
+.tag-lp-pases-card .tag-pases-card-num,
+.tag-lp-pases-card .tag-pases-card-vuelo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag-lp-pases-card .tag-pases-card-num > span {
+    text-align: center;
+    font: normal normal bold 64px/20px Avenir;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.tag-lp-pases-card .tag-pases-card-vuelo > span {
+    text-align: center;
+    font: normal normal 300 34px/40px Avenir;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.tag-lp-pases-donde {
+    padding: 34px 0;
+}
+
+.tag-lp-pases-donde .tag-title-donde {
+    text-align: left;
+    font: normal normal 300 28px/20px Avenir;
+    letter-spacing: 0px;
+}
+
+/***** TAG-LP-Venta Empleados ******/
+
+.tag-lp-venta-empleados .tag-lp-pases-card {
+    margin-left: 20px;
+}
+
+.tag-lp-venta-empleados .tag-lp-pases-card.tag-lp-card-medio {
+    width: 278px;
+}
+
+.tag-lp-venta-empleados .tag-lp-pases-card .tag-pases-card-num > span {
+    font: normal normal 44px/20px Avenir !important;
+}
+
+.tag-lp-venta-empleados .tag-lp-pases-card .tag-pases-card-vuelo > span {
+    font: normal normal 300 18px/24px Avenir !important;
+}
+
+/***** TAG-LP-Nuestros Convenios ******/
+
+.tag-lp-portal-convenios-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#tagNavBtnConvenios.tag-lp-portal-convenios-nav {
+    display: block;
+    width: 100%;
+}
+
+.tag-lp-portal-convenios-nav-btns {
+    width: auto;
+    display: inline-flex;
+    font: normal normal 300 22px/28px Avenir;
+    border-radius: 99em;
+    background-color: var(--tag-gray-white);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.tag-lp-portal-convenios-nav-btns .tag-nav-btns {
+    font: normal normal 300 22px/28px Avenir;
+    border-radius: 99em;
+    width: auto;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.tag-lp-portal-convenios-nav-btns .tag-nav-btns.active {
+    border-radius: 99em;
+    width: auto;
+    background-color: var(--tag-blue-light);
+    color: var(--tag-bg-blue-ultra-light);
+}
+
+.tag-card-small-modal {
+    width: 100%;
+    height: auto;
+    max-width: 230px;
+    max-height: 220px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+
+.tag-card-small-modal .tab-card-small-container .tag-card-small-modal-header-img {
+    /* width: 100%;
+    height: 100%; */
+    width: 142px;
+    height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.tag-card-small-modal .tab-card-small-container .tag-card-small-modal-header-img img {
+    width: auto;
+    height: auto;
+}
+
+.tag-card-small-modal .tab-card-small-container .tab-card-small-text {
+    text-align: center;
+    font: normal normal 300 22px/28px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-card-small-modal .tab-card-small-container .tab-card-small-link {
+    text-align: center;
+    text-decoration: underline;
+    font: normal normal 300 16px/28px Avenir;
+    letter-spacing: 0px;
+}
+
+.tag-modal-big,
+.modal-dialog.tag-modal-big {
+    width: 100%;
+    max-width: 1089px;
+}
+
+.tag-modal-big .modal-header {
+    border-top: 3px solid var(--tag-blue-light);
+    border-bottom: none;
+}
+
+.tag-modal-big .tag-modal-header-big-img {
+    width: 100%;
+    height: 100%;
+    max-width: 142px;
+    max-height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.tag-modal-big .tag-modal-header-big-img img {
+    width: auto;
+    height: auto;
+}
+
+.tag-modal-big .tag-modal-body-big-img,
+.tag-modal-big .tag-modal-body-big-txt {
+    width: 100%;
+    height: 100%;
+    max-width: 952px;
+    max-height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    background: #F7F8F9 0% 0% no-repeat padding-box;
+    border: 1px solid var(--tag-gray-light);
+    margin-bottom: 2%;
+}
+
+/* .tag-modal-big .tag-modal-body-big-img .tag-modal-body-big-img-container */
+.tag-modal-big .tag-modal-body-big-img img {
+    width: 100%;
+    height: 100%;
+    max-width: 179px;
+    max-height: 179px;
+}
+
+/* .tag-modal-big .tag-modal-body-big-img .tag-modal-body-big-img-container img {
+    width: auto;
+    height: auto;
+} */
+
+.tag-modal-big .modal-title {
+    font: normal normal 900 20px/20px Avenir;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+
+.tag-modal-big .tag-modal-body-big-txt-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.tag-modal-big .tag-modal-body-big-txt-info span {
+    text-align: left;
+    font: normal normal 900 20px/20px Avenir;
+    letter-spacing: 0px;
+    margin-right: 2%;
+}
+
+.tag-modal-big .modal-footer {
+    border-top: none;
+    justify-content: center;
+}
+
+/****** Estilos para LP de Grupos ******/
+
+.tag-lp-grupos ul {
+    list-style: none;
+}
+
+.tag-lp-grupos .tag-lp-portal-convenios-nav-btns .tag-nav-btns {
+    font: normal normal 300 18px/12px Avenir;
+    min-width: 120px;
+    justify-content: center;
+}
+
+.tag-lp-grupos .tag-lp-portal-convenios-nav-btns .tag-nav-btns.active {
+    background-color: var(--tag-bg-blue-dark);
+}
+
+.tag-lp-grupos .tag-lp-grupos-datos-viaje .tag-container-select {
+    width: 100% !important;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+/* Estilos de LP Destinos */
+
+.tag-lp-image-full::before {
+    top: 61px;
+}
+
+.tag-lp-image-desk-full {
+    display: none;
+}
+
+.tag-lp-image-mob-full {
+    display: block;
+}
+
+.tag-lp-image-mob-full div img {
+    width: 100%;
+}
+
+.tag-destinos-cont-lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-destinos-cont-lista .tag-destinos-opcion {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 15px 0;
+}
+
+.tag-destinos-cont-lista .tag-destinos-opcion .tag-destinos-img {
+    width: auto;
+    max-width: 56px;
+    max-height: 56px;
+    margin-right: 5%;
+}
+
+.tag-destinos-cont-lista .tag-destinos-opcion .tag-destinos-img img {
+    width: 100%
+}
+
+.tag-destinos-cont-lista .tag-destinos-opcion .tag-destinos-link a {
+    font: normal normal 900 18px/25px Avenir;
+    letter-spacing: 0px;
+    color: var(--tag-blue-light);
+    text-decoration: none;
+}
+
+.tag-info-pases {
+    margin-top: 3%;
+}
+
+.tag-pases-img {
+    width: auto;
+    height: 200px;
+    max-height: 200px;
+    margin-bottom: 20px;
+}
+
+.tag-manuales-ico-pdf {
+    width: 100%;
+    max-width: 24px;
+}
+
+.tag-manuales-ico-pdf img {
+    width: 100%;
+}
+
+.tad-manuales-paginador a {
+    text-decoration: none;
+    margin: 5px 10px;
+    font: normal normal normal 16px/20px Avenir;
+    letter-spacing: 0px;
+    color: var(--tag-gray-border)
+}
+
+.tad-manuales-paginador a.active {
+    color: var(--tag-blue-light);
+}
+
+/* Actualizaciones de LP Pases anuales 3-sep-23 */
+
+#tagTicket .tag-ticket-bg {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 239px;
+    height: 289px;
+    margin: 5% 0;
+    background: transparent url('../images/portal_empleados/iconos/ico_pases-ticket.svg') 50% 50% no-repeat padding-box;
+    opacity: 1;
+    padding: 40px;
+}
+
+#tagTicket .tag-ticket-bg .tag-ticket-info {
+    height: 81px;
+}
+
+#tagTicket .tag-ticket-bg .tag-ticket-empleado {
+    position: relative;
+    top: 35px;
+}
+
+#tagTicket .tag-ticket-bg .tag-ticket-info .tag-boletos-num {
+    text-align: center;
+    font: normal normal normal 70px/20px Aeonik Pro;
+    letter-spacing: 0px;
+    color: #152049;
+    opacity: 1;
+}
+
+#tagTicket .tag-ticket-bg .tag-ticket-info .tag-boletos-info {
+    text-align: left;
+    font: normal normal normal 16px/20px Aeonik Pro;
+    letter-spacing: 0px;
+    color: #152049;
+    opacity: 1;
+    margin-left: 15px;
+}
+
+#tagTicket .tag-ticket-bg .tag-ticket-tiempo .tag-boleto-expira {
+    text-align: center;
+    font: normal normal normal 16px/20px Aeonik Pro;
+    letter-spacing: 0px;
+    color: #A9B6C6;
+    opacity: 1;
+}
+
+#tagTicket .tag-ticket-bg .tag-ticket-empleado .tag-ticket-nombre {
+    font: normal normal normal 16px/20px Aeonik Pro;
+    letter-spacing: 0px;
+    color: #152049;
+    opacity: 1;
+    margin-bottom: 0;
+}
+
+#tagTicket .tag-ticket-bg .tag-ticket-empleado .tag-ticket-num-empleado {
+    font: normal normal normal 16px/20px Aeonik Pro;
+    letter-spacing: 0px;
+    color: #A9B6C6;
+    opacity: 1;
+}
+
+/* Actualizacion Home Portal de empleados 4-sep-23 */
+
+#modalUltimasNoticias .tag-noticias-header-img {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#modalUltimasNoticias .tag-modal-noticias-scrolly {
+    max-height: 233px;
+    overflow-y: scroll;
+}
+
+/* Actualizacion Nuestros Convenios 4-sep-23 */
+
+#tagNavBtnConvenios .tag-lp-portal-convenios-nav-btns {
+    width: 100%;
+    display: contents;
+}
+
+#tagNavBtnConvenios .tag-nav-btns {
+    /* width: 147px; */
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0%;
+    margin-bottom: 5px;
+}
+
+#tagNavBtnConvenios .tag-lp-portal-convenios-nav-btns .tag-nav-btns {
+    border: 1px solid var(--tag-blue-light);
+}
+
+/* Estilos para LP Cursos gratis  */
+
+#tagSeccionCursos .tag-card-small-modal {
+    height: auto;
+}
+
+#tagSeccionCursos .tab-card-small-text {
+    text-align: center;
+    font: normal normal 300 20px/22px Avenir;
+    letter-spacing: 0px;
+    color: #152049;
+    opacity: 1;
+    height: 49px;
+}
+
+.tag-margin-bottom-3 {
+    margin-bottom: 3%;
+}
+
+.tag-swiper-empleados-container-btns .swiper-button-prev:after{
+    content: 'prev' !important;
+}
+
+.tag-swiper-empleados-container-btns .swiper-button-next:after {
+    content: 'next' !important;
+}
+
+.tag-cards-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.tag-cards-content > div {
+    padding-right: 10px;
+}
+
+.tag-btn-descargar {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.tag-btn-descargar > img {
+    margin-right: 2%;
+}
+
+/* Media Querys */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+    .tag-hidden-mobile {
+        display: flex !important;
+    }
+
+    .tag-hidden-desk {
+        display: none !important;
+    }
+
+    .tag-display-hiden {
+        display: none;
+    }
+
+    .tag-flex-sm-wrap {
+        display: flex;
+    }
+
+    .tag-login-mobile {
+        height: 270px;
+        width: 800px;
+    }
+
+    .tag-modal-chek-in .modal-dialog,
+    .tag-modal-error .modal-dialog {
+        margin-top: 100px;
+    }
+
+    /* .tag-modal-chek-in .modal-content,
+    .tag-modal-error .modal-content {
+        width: 640px;
+        height: 245px;
+    } */
+
+    /* .tag-modal-icon-close {
+        position: relative;
+        left: 250px;
+    } */
+
+    .tag-info-fly-date {
+        text-align: center;
+    }
+
+    /* .tag-info-fly .tag-box-info-fly {
+        width: 100%;
+        max-width: 680px;
+        height: 200px;
+    } */
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal,
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival {
+        margin-bottom: 0px;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal p,
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival p {
+        margin-bottom: 0;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-terminal p,
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-arrival p {
+        display: block;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-time {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-time p {
+        margin: auto;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline {
+        display: flex;
+        padding: 9px 0;
+        width: 100%;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline p {
+        font: normal normal 300 12px/16px Avenir;
+        letter-spacing: 0px;
+        opacity: 1;
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+
+    .tag-info-fly .tag-box-info-fly-bags {
+        display: flex;
+        padding: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .tag-info-fly .tag-box-info-fly-bags div p {
+        margin-bottom: 0;
+    }
+
+    .tag-info-fly .tag-box-info-fly-bags div p:first-child {
+        font: normal normal 900 12px/16px Avenir;
+        letter-spacing: 0px;
+    }
+
+    .tag-info-fly .tag-box-info-fly-img-date .tag-box-info-fly-img-date-text {
+        display: none;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline-checkbox {
+        width: auto;
+        position: relative;
+        left: -129%;
+        top: -140%;
+        height: 1px;
+        /* position: absolute;
+        left: 10%;
+        top: 35%; */
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline-checkbox .tag-check-big .form-check-label {
+        display: none;
+    }
+
+    .tag-info-fly .tag-box-info-fly-img-date img {
+        position: initial;
+    }
+
+    .tag-passengers-add .tag-passengers-add-info .tag-passengers-add-info-mail {
+        display: none;
+    }
+
+    .tag-passengers-add .tag-passengers-add-info .tag-passengers-add-info-type {
+        display: flex;
+    }
+
+    .tag-passengers-add .tag-passengers-add-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tag-passengers-add .tag-passengers-add-dates {
+        display: none;
+    }
+
+    .tag-passengers-add .tag-passengers-add-mail {
+        display: block;
+    }
+
+    .tag-passengers .tag-passengers-add .tag-passengers-add-resend {
+        display: block;
+    }
+
+
+    .tag-passengers .tag-checkin-btn-form {
+        display: flex;
+        max-width: 100px;
+        margin-left: 15px;
+    }
+
+    .tag-btns-container .tag-btns-container-next {
+        flex-wrap: nowrap;
+        flex-direction: initial;
+        justify-content: flex-end;
+    }
+
+    .tag-btns-container .tag-btns-container-next a,
+    .tag-btns-container .tag-btns-container-next button {
+        max-width: 200px;
+        margin: 0 15px;
+    }
+
+    .tag-btns-container .tag-airlines-btn-bg-empty {
+        height: 50px;
+        margin-right: 30px;
+    }
+
+    .tag-table-seating-scroll-x {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        /* max-width: 460px; */
+        /* border: 1px solid var(--tag-gray-light); */
+    }
+
+    .tag-table-seating-scroll-x .tag-table-seating-scroll-x-container {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: inherit;
+        margin-left: 0px;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .tag-aditionals .tag-aditionals-dir-reverse {
+        flex-direction: initial;
+    }
+
+    .tag-aditionals .tag-aditionals-info-content {
+        margin-top: 40px;
+    }
+
+    #modalCuidado .modal-content .tag-btns-container {
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+
+    #modalCuidado .modal-content .tag-btns-container button {
+        width: 100%;
+        max-width: 160px;
+        height: 40px;
+    }
+
+    .tag-card.tag-table-seating-scroll-x {
+        height: auto;
+        border: none;
+        max-width: none;
+        padding: 0;
+    }
+
+    .tag-card.tag-table-seating-scroll-x .tag-table-seating-scroll-x-container {
+        max-width: 220px;
+        margin-left: 0;
+        margin-right: 3%;
+    }
+
+    /******/
+
+    .tag-checkin-success-ticket {
+        height: 330px;
+    }
+
+    .tag-checkin-success-info>div:first-child {
+        padding-right: 50px;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-wrap {
+        padding: 15px;
+        padding-bottom: 0%;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-terminal span,
+    .tag-checkin-success-ticket .tag-box-info-fly-arrival span {
+        font: normal normal 300 20px/27px Avenir;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-terminal p,
+    .tag-checkin-success-ticket .tag-box-info-fly-arrival p {
+        font: normal normal 300 14px/19px Avenir;
+        margin: 5px 0 3px 0;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-time {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--tag-gray-fly);
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-time p {
+        margin-bottom: 0;
+        color: var(--tag-gray-fly);
+        text-align: center;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-time p span {
+        color: var(--tag-gray-fly);
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-airline {
+        display: block;
+        width: 100%;
+        padding: 0 15px;
+        height: auto;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-airline p {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-bags {
+        display: flex;
+        padding: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-bags div p:first-child {
+        font: normal normal 900 12px/16px Avenir;
+        letter-spacing: 0px;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-bags div p {
+        margin-bottom: 0;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-img-date img {
+        min-height: 200px;
+        object-fit: cover;
+        height: 100%;
+        /* position: relative; */
+        top: -17px;
+        z-index: -1;
+    }
+
+    /******** Styles for LP Guatemala ********/
+
+    .tag-lp-image-full {
+        width: 100%;
+        background-image: url(../../public/images/guatemala-5.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        background-repeat: no-repeat;
+    }
+
+    .tag-lp-image-full::before {
+        content: "";
+        width: 100%;
+        min-height: 600px;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: transparent linear-gradient(180deg, #FFFFFF00 60%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+
+    .tag-lp-title {
+        font: normal normal 900 115px/62px Avenir;
+        margin-top: 25px;
+    }
+
+    .tag-lp-salesWrp {
+        position: absolute;
+    }
+
+    .tag-lp-salesWrp .tag-sales a {
+        color: var(--tag-white);
+        text-decoration: none;
+    }
+
+    .tag-lp-salesWrp .tag-sales span {
+        color: var(--tag-white);
+        font: normal normal normal 16px/62px Avenir;
+        letter-spacing: 0px;
+    }
+
+    .tag-lp-h3 {
+        font: normal normal 900 36px/20px Avenir;
+    }
+
+    /* NOTA: Esta clase se le agrega una clase específica con la imagen de bg especifica de el*/
+    .tag-bg-image-top {
+        /* background-image: url(../../public/images/lp_encuentra_destino/Carrusel_web_promociones_Desk_1.jpg); */
+        min-height: 350px;
+        background-position-y: 0px;
+    }
+
+    .tag-bg-image-top-empleados {
+        background-image: url(../images/paquetes/TGZ/paquetes-tuxtla.jpg);
+        min-height: 400px;
+    }
+
+    /******** Styles for LP Encuentra Destino ********/
+
+    .tag-encuentra-destino {
+        background-image: url(../../public/images/lp_encuentra_destino/Carrusel_web_promociones_Desk_1.jpg);
+        min-height: 350px;
+        background-position-y: 0px;
+    }
+
+    .tag-width-100-mobile {
+        width: initial;
+    }
+
+    /***** TAG-LP-Nuestros Convenios ******/
+
+    .tag-lp-portal-convenios .tag-table-seating-scroll-x {
+        justify-content: center;
+    }
+
+    /***** TAG-LP-Venta Empleados ******/
+
+    /* .tag-empleados-recursos .tag-table-seating-scroll-x .tag-table-seating-scroll-x-container,
+    .tag-lp-venta-empleados .tag-table-seating-scroll-x .tag-table-seating-scroll-x-container {
+        flex: inherit;
+        width: auto;
+        max-width: inherit;
+        margin-left: 0px;
+        margin: 10px 0;
+        padding: 0;
+    } */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .tag-flex-md-wrap {
+        display: flex;
+    }
+
+    .tag-justify-around-center {
+        justify-content: space-around;
+    }
+
+    .tag-input {
+        max-width: 250px;
+    }
+
+    .tag-btn {
+        max-width: 300px;
+    }
+
+    .tag-only-desk {
+        display: block;
+    }
+
+    .tag-only-mobile {
+        display: none;
+    }
+
+    .tag-salesWrp {
+        margin-top: 0px;
+    }
+
+    .tag-login {
+        padding-left: 30px;
+    }
+
+    .tag-login-imgSales {
+        position: initial;
+        width: 100%;
+        right: initial;
+    }
+
+    .tag-login-mobile {
+        height: 116%;
+        width: 100%;
+        position: relative;
+        top: -72px;
+    }
+
+    .tag-wrap-reverse {
+        display: flex;
+        flex-flow: wrap-reverse;
+    }
+
+    .tag-login .tag-login-container h1 {
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    .tag-login .tag-login-container form .tag-login-cont-inputs {
+        max-width: 520px;
+        margin: auto;
+    }
+
+    .tag-login .tag-login-container form input {
+        max-width: 250px;
+    }
+
+    .tag-login .tag-login-container-txt p {
+        max-width: 579px;
+        margin: auto;
+    }
+
+    .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline p {
+        font: normal normal 300 12px/16px Avenir;
+        letter-spacing: 0px;
+        opacity: 1;
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+
+    /* .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline-checkbox {
+        width: auto;
+        position: absolute;
+        left: 10%;
+        top: 35%;
+    } */
+
+    #modalCuidado .modal-content .tag-btns-container {
+        margin-right: 120px;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-airline {
+        display: flex;
+        width: 100%;
+        padding: 0 15px;
+        height: auto;
+    }
+
+    #modalError.tag-modals .modal-content,
+    #modalErrorDatos.tag-modals .modal-content,
+    #modalCheckIn.tag-modals .modal-content,
+    #modalMenores.tag-modals .modal-content,
+    #modalServicios.tag-modals .modal-content,
+    #modalTerceros.tag-modals .modal-content {
+        width: 640px;
+    }
+
+    /******** Styles for LP Encuentra Destino ********/
+
+    .tag-lp-encuentra-destino-opciones {
+        display: flex;
+        align-items: center;
+    }
+
+    .tag-lp-encuentra-destino-title {
+        font: normal normal 300 28px/20px Avenir;
+        margin-bottom: 0;
+    }
+
+    .tag-lp-encuentra-destino-select {
+        max-width: 220px;
+        font: normal normal 900 28px/20px Avenir;
+        margin-left: 15px;
+    }
+
+    .tag-lp-center-card-mobile {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .tag-lp-info-image {
+        padding-top: 0;
+        border-bottom: none;
+    }
+
+    .tag-lp-info-image h4 {
+        text-align: initial;
+    }
+
+    .tag-lp .tag-div-line-lf {
+        padding-left: 30px;
+        margin-left: 20px;
+    }
+
+    .tag-lp .tag-div-line-lf {
+        border-left: 1px solid var(--tag-gray-light);
+    }
+
+    .tag-lp .tag-div-line-lf p img {
+        width: 25px;
+        margin-right: 20px;
+    }
+
+    .tag-lp .tag-div-line-lf .tag-lp-p-zona-horaria {
+        padding-left: 45px;
+    }
+
+    .tag-table-seating-scroll-x {
+        border-bottom: none;
+        overflow-x: hidden;
+    }
+
+    .tag-loop-video {
+        height: 400px;
+    }
+
+    .tag-info-destino .tag-info-destino-content-text {
+        width: 100%;
+    }
+
+    .tag-mobile-flex {
+        display: flex;
+        flex-wrap: initial;
+        margin-bottom: 20px;
+    }
+
+    .tag-mobile-flex:nth-child(2) {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .tag-form-cotiza .tag-form-input-cotiza {
+        height: 50px !important;
+        width: 300px;
+    }
+
+    .tag-container-select {
+        width: 150px !important;
+        margin-bottom: 0px;
+    }
+
+    .tag-lp-title-pack {
+        text-align: left;
+        font: normal normal 900 50px/42px Avenir;
+        letter-spacing: 0px;
+    }
+
+    .tag-border-full {
+        border: 1px solid var(--tag-gray-border);
+    }
+
+    .tag-pack-add {
+        padding: 20px;
+    }
+
+    .tag-pack-add-ico-info p {
+        margin-bottom: 0;
+    }
+
+    .lp-swiper-section .swiper {
+        max-width: 100%;
+    }
+
+    .lp-swiper-section .swiper-pagination {
+        position: initial;
+    }
+
+    /* .lp-swiper-section .swiper-slide {
+        width: 100%;
+        max-width: 370px;
+        height: 100%;
+        max-height: 205px;
+    } */
+
+    .tag-cards-about {
+        height: 390px;
+        margin-right: 3%;
+    }
+
+    .tag-card-pack-cotiza {
+        margin-right: 3%;
+    }
+
+    .tag-lp-image-full.tag-bg-oax {
+        height: 462px;
+    }
+
+    /* Estilos Portal de empleados desk */
+
+    .tag-swiper-empleados-noticias .tag-swiper-img-noticias {
+        /* max-width: 435 !important; */
+        max-height: 165px;
+        background-size:cover;
+        object-fit: cover;
+    }
+
+    .tag-swiper-empleados-noticias .tag-swiper-noticias {
+        max-width: 100%;
+    }
+
+    /* .tag-swiper-empleados-noticias .swiper-button-next {
+        margin-top: 0;
+    }
+
+    .tag-swiper-empleados-noticias .swiper-button-prev {
+        margin-bottom: 0;
+    } */
+
+    .tag-bg-header-img {
+        margin-bottom: 50px;
+    }
+
+    /***** TAG-LP-Venta Empleados ******/
+
+    .tag-lp-venta-empleados .tag-lp-pases-card {
+        margin-left: 50px;
+    }
+
+    .tag-empleados-recursos .tag-table-seating-scroll-x .tag-table-seating-scroll-x-container,
+    .tag-lp-venta-empleados .tag-table-seating-scroll-x .tag-table-seating-scroll-x-container,
+    .tag-lp-portal-convenios .tag-table-seating-scroll-x .tag-table-seating-scroll-x-container {
+        flex: inherit;
+        width: auto;
+        max-width: inherit;
+        margin-left: 0px;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    /* .tag-lp-venta-empleados .tag-table-seating-scroll-x .tag-table-seating-scroll-x-container {
+        flex: inherit;
+        width: auto;
+        max-width: inherit;
+        margin-left: 0px;
+        margin: 10px 0;
+        padding: 0;
+    } */
+
+    /***** TAG-LP-Nuestros Convenios ******/
+
+    .tag-lp-portal-convenios .tag-table-seating-scroll-x {
+        justify-content: flex-start;
+    }
+
+    .tag-card-small-modal {
+        width: 230px;
+        height: 220px;
+    }
+    
+    .tag-card-small-modal .tab-card-small-container .tag-card-small-modal-header-img {
+        width: 142px;
+        height: 142px;
+    }
+
+    .tag-modal-big .tag-modal-header-big-img {
+        width: 142px;
+        height: 142px;
+    }
+
+    .tag-modal-big .tag-modal-body-big-img {
+        width: 952px;
+        height: 190px;
+        margin-bottom: 5%;
+    }
+
+    .tag-modal-big .tag-modal-body-big-img img {
+        width: 179px;
+        height: 179px;
+    }
+
+    /****** Estilos para LP de Grupos ******/
+
+    .tag-lp-grupos .tag-lp-grupos-datos-viaje .tag-container-select {
+        margin-bottom: 0;
+    }
+
+    /* Estilos de LP Destinos */
+
+    .tag-lp-image-desk-full {
+        display: block;
+    }
+
+    .tag-lp-image-desk-full div img {
+        width: 100%;
+    }
+
+    .tag-lp-image-mob-full {
+        display: none;
+    }
+
+    /* Actualizacion Home Portal de empleados 4-sep-23 */
+
+    #modalUltimasNoticias .tag-noticias-header-img {
+        width: 680px;
+        height: 250px;
+    }
+
+    /* Actualizacion Nuestros Convenios 4-sep-23 */
+    
+    #tagNavBtnConvenios.tag-lp-portal-convenios-nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #tagNavBtnConvenios .tag-lp-portal-convenios-nav-btns {
+        overflow-x: inherit;
+    }
+
+    #tagNavBtnConvenios .tag-nav-btns {
+        max-width: 147px;
+        justify-content: center;
+        border-radius: 99em;
+        margin-bottom: 0px;
+    }
+    
+    #tagNavBtnConvenios .tag-lp-portal-convenios-nav-btns .tag-nav-btns {
+        border: none;
+    }
+
+    /* Estilos para LP Cursos gratis */
+
+    #tagSeccionCursos .tag-card-small-modal {
+        width: 230px;
+        height: 220px;
+    }
+
+    #tagSeccionCursos .tag-card-small-modal .tab-card-small-container .tag-card-small-modal-header-img {
+        width: 152px;
+        height: 112px;
+    }
+
+    .tag-cards-content {
+        justify-content: space-around;
+        margin: auto;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .tag-flex-lg-wrap {
+        display: flex;
+    }
+
+    .tag-salesWrp {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .tag-login-mobile {
+        height: 100%;
+        width: 100%;
+        position: initial;
+    }
+
+    .tag-info-fly .tag-box-info-fly {
+        /* width: 100%;
+        max-width: 680px; */
+        height: 200px;
+    }
+
+    .tag-info-fly .tag-box-info-fly.tag-box-info-fly-return {
+        height: 218px;
+    }
+
+    /* .tag-info-fly .tag-box-info-fly-wrap .tag-box-info-fly-airline-checkbox {
+        width: auto;
+        position: absolute;
+        left: 30%;
+        top: 35%;
+    } */
+
+    .tag-passengers .tag-box-info-fly {
+        height: 100%;
+    }
+
+    #modalCuidado .modal-dialog {
+        max-width: 926px;
+    }
+
+    #modalCuidado .modal-content .modal-header .modal-title {
+        margin-left: 15px;
+    }
+
+    #modalCuidado .modal-content .modal-header .tag-modal-icon-close {
+        position: relative;
+        left: 370px;
+        top: -18px;
+    }
+
+    #modalCuidado .modal-content .modal-body p {
+        margin-bottom: 0px;
+        font: normal normal normal 16px/22px Avenir;
+        letter-spacing: 0px;
+    }
+
+    #modalCuidado .modal-content .modal-body img {
+        max-width: 566px;
+        margin: 30px auto
+    }
+
+    #modalCuidado .modal-content .tag-btns-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #modalCuidado .modal-content .tag-btns-container button {
+        width: 160px;
+        height: 40px;
+    }
+
+    .tag-checkin-success-ticket {
+        height: 246px;
+    }
+
+    .tag-checkin-success-ticket {
+        height: 265px;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-airline {
+        height: 50px;
+    }
+
+    /******** Styles for LP Encuentra Destino ********/
+
+    .tag-lp-encuentra-destino-select {
+        max-width: 334px;
+        font: normal normal 900 28px/20px Avenir;
+        margin-left: 15px;
+    }
+
+    .tag-loop-video {
+        height: 515px;
+    }
+
+    /* Cards de Recursos */
+
+    #tagCardsRecursos.tag-cards-content > div {
+        margin-right: 2%;
+        margin-bottom: 2%;
+    }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .tag-flex-xl-wrap {
+        display: flex;
+    }
+
+    .tag-checkin-success-ticket {
+        height: 200px;
+    }
+
+    .tag-checkin-success-ticket .tag-box-info-fly-airline {
+        height: 30px;
+    }
+
+    .tag-loop-video {
+        height: 619px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .tag-flex-xxl-wrap {
+        display: flex;
+    }
+}

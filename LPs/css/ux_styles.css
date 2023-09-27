@@ -2259,6 +2259,207 @@ b {
     cursor: no-drop;
 }
 
+/* Seccion de cumpleaños */
+
+.tag-swiper-cumpleaños {
+    margin-top: 5%;
+}
+
+.tag-swiper-cumpleaños .swiper-wrapper {
+    display: block;
+}
+
+.tag-swiper-cumpleaños .swiper-scrollbar-drag {
+    background-color: var(--tag-blue-light);
+}
+
+.tag-cumpleaños-cont-listado ol {
+    padding: 0;
+}
+
+.tag-cumpleaños-cont-listado li {
+    list-style: none;
+}
+
+.contenedor-festejado {
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.img-festejado {
+    width: 100%;
+    max-width: 60px;
+    height: 60px;
+    margin-left: 15px;
+}
+
+.img-festejado img {
+    width: 100%;
+}
+
+.festejado-info {
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.festejado-info p {
+    width: 100%;
+    text-align: left;
+    font: normal normal normal 16px/48px Aeonik Pro;
+    letter-spacing: 0px;
+    color: #152049;
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0;
+    height: 20px;
+}
+
+.festejado-info span {
+    width: 100%;
+    text-align: left;
+    font: normal normal normal 12px/48px Aeonik Pro;
+    letter-spacing: 0px;
+    color: #00A1ED;
+    text-transform: capitalize;
+    opacity: 1;
+    height: 20px;
+}
+
+.festejado-img-active-modal {
+    display: flex;
+    width: 30px
+}
+
+.festejado-img-active-modal img {
+    width: 100%;
+}
+
+/* Aniversarios */
+.tag-swiper-aniversario .swiper-wrapper {
+    display: block;
+}
+
+.tag-lp-card-aniversario {
+    width: 200px;
+    height: 250px;
+    background: var(--tag-bg-blue-dark) 0% 0% no-repeat padding-box;
+    border: 1px solid var(--tag-bg-blue-dark);
+    border-radius: 3px;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+
+.tag-dia-aniversario {
+    height: 15px;
+}
+
+.tag-dia-aniversario-info {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+    left: 75%;
+    top: -1px;
+    width: 43px;
+    height: 59px;
+    border-left: 21px solid var(--tag-blue-light);
+    border-right: 22px solid var(--tag-blue-light);
+    border-bottom: 15px solid transparent;
+}
+
+.tag-dia-aniversario-info p {
+    width: 100%;
+    text-align: center;
+    font: normal normal bold 26px/16px Aeonik Pro;
+    letter-spacing: 0px;
+    color: var(--tag-white);
+    opacity: 1;
+    margin: 0;
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+
+.tag-dia-aniversario-info span {
+    width: 100%;
+    text-align: center;
+    font: normal normal bold 9px/18px Aeonik Pro;
+    letter-spacing: 0px;
+    color: var(--tag-bg-blue-dark);
+    opacity: 1;
+    position: relative;
+    top: 20px;
+    left: -10px;
+}
+
+.tag-aniversario-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.tag-aniversario-img img {
+    width: 100%;
+}
+
+.tag-aniversario-nombre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tag-aniversario-nombre p {
+    text-align: center;
+    font: normal normal 18px/16px Aeonik Pro;
+    letter-spacing: 0px;
+    color: var(--tag-white);
+    text-transform: capitalize;
+    opacity: 1;
+    margin: 0px;
+    margin-top: 10px !important;
+}
+
+.tag-aniversario-nombre span {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font: normal normal normal 12px/48px Aeonik Pro;
+    letter-spacing: 0px;
+    color: var(--tag-blue-light);
+    text-transform: capitalize;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.tag-bg-btn-felicitar {
+    width: 125px;
+    height: 25px;
+    background-image: url(../images/portal_empleados/iconos/ico_portal_hbd_aniversary.svg);
+    /* background: var(--tag-blue-light) !important;
+    opacity: 1;
+    color: var(--tag-white) !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font: normal normal normal 12px/48px Aeonik Pro;
+    padding: 0 !important;
+    border-radius: 0px !important; */
+}
+
+/* .img-btn-cumple {
+    width: 15px !important;
+    margin-right: 5px !important;
+} */
+
 /* Media Querys */
 
 /* Small devices (landscape phones, 576px and up) */
@@ -3029,6 +3230,21 @@ b {
     .tag-cards-content {
         justify-content: space-around;
         margin: auto;
+    }
+
+    /* Seccion de cumpleaños */
+
+    .tag-swiper-cumpleaños .swiper-wrapper {
+        display: flex;
+    }
+
+    .contenedor-festejado {
+        border-right: 1px solid var(--tag-gray-fly);
+    }
+
+    /* Aniversario */
+    .tag-swiper-aniversario .swiper-wrapper {
+        display: flex;
     }
 
 }

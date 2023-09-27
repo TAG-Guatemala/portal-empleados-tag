@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -211,7 +211,7 @@
 															</button>
 														</h2>
 														<div id="subMenuC1A" class="accordion-collapse collapse" aria-labelledby="subMenu1A" data-bs-parent="#subAccMenu2">
-															<div class="accordion-body linksMovil"> <a class="txtTittleMenuI" href="https://www.tag.com.gt/tarifas-y-cargos-1?hsLang=es">Nuestras tarifas</a> <a class="txtTittleMenuI" href="https://www.tag.com.gt/nosotros-1?hsLang=es#secondTabUs">Nosotros</a> <a class="txtTittleMenuI" href="https://www.tag.com.gt/condiciones-generales-1?hsLang=es">Condiciones generales</a> <a class="txtTittleMenuI" href="https://tagairlines.com/es-gt/experiencia-tag/tag-airlines/regulaciones-covid-19/">COVID-19</a> </div>
+															<div class="accordion-body linksMovil"> <a class="txtTittleMenuI" href="https://www.tag.com.gt/tarifas-y-cargos-1?hsLang=es">Nuestras tarifas</a> <a class="txtTittleMenuI" href="https://www.tag.com.gt/nosotros-1?hsLang=es#secondTabUs">Nosotros</a> <a class="txtTittleMenuI" data-bs-toggle="modal" data-bs-target="#ModalTermCon">Condiciones generales</a> <a class="txtTittleMenuI" href="https://tagairlines.com/es-gt/experiencia-tag/tag-airlines/regulaciones-covid-19/">COVID-19</a> </div>
 														</div>
 													</div>
 													<div class="accordion-item">
@@ -584,7 +584,7 @@
 									<p class="my-3 txtTittleMenu">TagAirlines</p>
 									<div class="w-100 my-4 "> <a class="txtTittleMenuI" href="https://www.tag.com.gt/tarifas-y-cargos-1?hsLang=es">Nuestras tarifas</a> </div>
 									<div class="w-100 my-4"> <a class="txtTittleMenuI" href="https://www.tag.com.gt/nosotros-1?hsLang=es#secondTabUs">Nosotros</a> </div>
-									<div class="w-100 my-4"> <a class="txtTittleMenuI" href="https://www.tag.com.gt/condiciones-generales-1?hsLang=es">Condiciones generales</a> </div>
+									<div class="w-100 my-4"> <a class="txtTittleMenuI" data-bs-toggle="modal" data-bs-target="#ModalTermCon">Condiciones generales</a> </div>
 									<div class="w-100 my-4 "> <a class="txtTittleMenuI" href="https://tagairlines.com/es-gt/experiencia-tag/tag-airlines/regulaciones-covid-19/">COVID-19</a> </div>
 								</div>
 								<div class="col-3 px-5 mt-4">
@@ -3490,21 +3490,21 @@
 							<h2>Ingresa tus datos</h2>
 						</div>
 						<div class="tag-modal-form-container">
-							<form>
+							<div>
 								<div class="form-floating col-sm-12 col-12 mb-3">
-									<input type="text" class="form-control tag-input tag-form-input tag-form-input-error" id="floatNumRes" placeholder="SMU226" name="nombre">
-									<label class="tag-form-label" for="floatNameComplete">Número de empleado</label>
+									<input type="text" class="form-control tag-input tag-form-input" id="loginEmpleado" placeholder="SMU226" >
+									<label class="tag-form-label" for="loginEmpleado">Número de empleado</label>
 								</div>
 								<div class="form-floating col-sm-12 col-12 mb-3">
-									<input type="text" class="form-control tag-input tag-form-input tag-form-input-error" id="floatNumRes" placeholder="SMU226" name="nombre">
-									<label class="tag-form-label" for="floatPassword">Contraseña</label>
-									<span class="tag-form-errors">Número de empleado o contraseña incorrectos</span>
+									<input type="password" class="form-control tag-input tag-form-input" id="loginEmpleadoPass" placeholder="SMU226" >
+									<label class="tag-form-label" for="loginEmpleadoPass">Contraseña</label>
+									<span class="tag-form-errors" id="infoLogin">Número de empleado o contraseña incorrectos</span>
 								</div>
-								<button type="submit" class="btn btn-primary col-12 tag-btn-inicio-sesion">INICIAR SESIÓN</button>
+								<button onclick="loginEmpleado()" class="btn btn-primary col-12 tag-btn-inicio-sesion">INICIAR SESIÓN</button>
 								<div class="col-12">
 									<a id="olvidasteContra" class="tag-olvidaste-contra" rel="noopener noreferrer">¿Olvidaste tu contraseña?</a>
 								</div>
-							</form>
+							</div>
 						</div>
 					</div>
 					<div id="tagSesionAgencia" class="modal-body col-12 col-md-10 m-auto tag-form-login" style="display: none;">
@@ -3598,6 +3598,53 @@
 				});
 			})
 		</script>
+		<script>
+			const loginEmpleado = async ()=>{
+				let usr = document.getElementById("loginEmpleado").value
+				let pss = document.getElementById("loginEmpleadoPass").value
+
+				var myHeaders = new Headers();
+				myHeaders.append("Content-Type", "application/json");
+
+				let usrLogin = `{
+                                "empleado": "${usr}",
+                                "password": "${pss}"
+                            }`
+
+				var requestOptions = {
+					method: 'POST',
+					headers: myHeaders,
+					body: usrLogin,
+					redirect: 'follow'
+				};
+
+				fetch("http://18.208.121.23:2504/portal-empleados/login/", requestOptions)
+						.then(response => response.text())
+						.then(result => {
+							let usuario = JSON.parse(result)
+							if (usuario.numero_empleado===-1){
+								document.getElementById("loginEmpleado").classList.add("tag-form-input-error")
+								document.getElementById("loginEmpleadoPass").classList.add("tag-form-input-error")
+								document.getElementById("infoLogin").style.display = "block"
+
+								setTimeout(()=>{
+									document.getElementById("loginEmpleado").classList.remove("tag-form-input-error")
+									document.getElementById("loginEmpleadoPass").classList.remove("tag-form-input-error")
+									document.getElementById("infoLogin").style.display = "none"
+								},2500)
+							}else{
+								window.sessionStorage.setItem("login", true)
+								window.sessionStorage.setItem("empleado", usuario.numero_empleado)
+								window.location.href = "./portal-de-empleados/portal-de-empleados.html"
+								//window.location.href = "https://tagairlines.com/home-test/es-gt/portal-de-empleados/portal-de-empleados.html"
+							}
+						})
+						.catch(error => console.log('error', error));
+
+
+			}
+
+		</script>
 	</section>
 	<!-- footer  -->
 	<section>
@@ -3615,9 +3662,9 @@
 							<!--<a href="#!">Sala de prensa</a>--></div>
 						<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 colFooter">
 							<div class="row">
-								<p class="txtFTittle">Información pasajero</p>
+								<p class="txtFTittle">Información pasajeross</p>
 							</div>
-							<a href="https://tagairlines.com/es-gt/experiencia-tag/tag-airlines/regulaciones-covid-19/">COVID-19</a>
+							<!--<a href="https://tagairlines.com/es-gt/experiencia-tag/tag-airlines/regulaciones-covid-19/">COVID-19</a>-->
 							<a href="https://www.tag.com.gt/destinos-1?hsLang=es">Nuestros destinos</a>
 							<a href="https://www.tag.com.gt/viajeros-especiales-1?hsLang=es#fourthTab">Prepara tu viaje</a>
 							<a href="https://fo-latam.ttinteractive.com/Zenith/FrontOffice/Tag/es-Es/Home/FindBooking">Administra tu viaje </a>
@@ -3703,7 +3750,7 @@
 						</h2>
 						<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFooter">
 							<div class="accordion-body accFMenu">
-								<a href="https://tagairlines.com/es-gt/experiencia-tag/tag-airlines/regulaciones-covid-19/">COVID-19</a>
+								<!--<a href="https://tagairlines.com/es-gt/experiencia-tag/tag-airlines/regulaciones-covid-19/">COVID-19</a>-->
 								<a href="https://www.tag.com.gt/destinos-1?hsLang=es">Nuestros destinos</a>
 								<a href="https://www.tag.com.gt/viajeros-especiales-1?hsLang=es#fourthTab">Prepara tu viaje</a>
 								<a href="https://fo-latam.ttinteractive.com/Zenith/FrontOffice/Tag/es-Es/Home/FindBooking">Administra tu viaje </a>

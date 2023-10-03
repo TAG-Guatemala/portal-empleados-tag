@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150" viewBox="0 0 150 150">
+  <g id="ico_portal_vuelo-amigos" transform="translate(-506 -1258)">
+    <g id="Rectangle_17138" data-name="Rectangle 17138" transform="translate(506 1258)" fill="#fff" stroke="#fff" stroke-width="1">
+      <rect width="150" height="150" stroke="none"/>
+      <rect x="0.5" y="0.5" width="149" height="149" fill="none"/>
+    </g>
+    <g id="Group_9202" data-name="Group 9202" transform="translate(504.658 1251.989)">
+      <g id="Group_9199" data-name="Group 9199" transform="translate(28.009 29.345)">
+        <g id="Group_9195" data-name="Group 9195">
+          <rect id="Rectangle_17438" data-name="Rectangle 17438" width="61.719" height="90.092" rx="5.442" transform="matrix(0.992, -0.123, 0.123, 0.992, 0, 7.571)" fill="#fff" stroke="#192544" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <g id="Group_9198" data-name="Group 9198" transform="translate(32.53 23.98)">
+          <g id="Group_9196" data-name="Group 9196">
+            <image id="Rectangle_17439" data-name="Rectangle 17439" width="5.594" height="33.845" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAB5CAYAAAA54wGJAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAFKADAAQAAAABAAAAeQAAAADwt2E7AAABSUlEQVRoBe2SWxKCMAxFwXE3rs9VuD63Iw4ypWCT5tEOIUz8oaQl3pyecZqmIf1uj+fv5fN+jakmfd5TE+mH2PkbtqGtR8OFXMtF9WfY4hxkQv+E0L+01CJhpqd10QnDnnI7GTnfbfvq2JE1Lh6bUEN0TdjLxbWhJg30TTQsqUhddMawh4vORi7vWF6xGVniok1CCckiYauLRUNJGuhsNISoLDWui04ZtrjodGT8rukd25E5LtompAkOA5pQ6yLakJMGOhMNISr7GuWic4YaF52PvL9f3ttFR67JffzIUhePT8iTJZ+KhJkFtcJctGEocdEmIcVzux8JtzToNeSiHUOui3YJaaLLiUjIJZXP/btoy5Djom3CTA5fRUKcTW1n6+IFGVJyX3Dk2m3Pe+cdObl43oSJrSphzUVVw5QGekZDiAq/NrvYneEXWpVDMwxe7yEAAAAASUVORK5CYII="/>
+          </g>
+          <g id="Group_9197" data-name="Group 9197" transform="translate(8.671 1.399)">
+            <image id="Rectangle_17440" data-name="Rectangle 17440" width="5.035" height="28.531" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAABmCAYAAADGfcGAAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAEqADAAQAAAABAAAAZgAAAAC1M9ZgAAABMUlEQVRYCe2SaxKCMAyEgfE2ns9TeD6vY52CktJm26RIeUz8Y7rAZvOlvXOu87/h/piK8dR179ez/5aiv1tsIPqKeWnQdmY8RmlAD7Q6NNKODI2qEv2DUzaRZryskWa82WjteLORpjv3btFIyqloxHXntIXRGk4LI66T1yTjiYxQg1BPjGrHS4zCLppabFTiJDYqpWONajixRqXu3PN9jHLAt0+kBb59Im4zXkOc2iTScGqTCHHi9KpEHPAqo6pEUuDtEnFjcNr+ieLNtU0k2VzbRNyWYu0YicLNtU9U2lz7RPGW4vMFE/2uwMlHy92lk48WX8LwbKOFNNLa3+4LMEK3+wKjpTubFBsNkSHdGBELVBkjRIZ0Y0QsUGWMEBnSjRGxQJUxQmRIN0bEAlXHY/QB6X87yyvxVH8AAAAASUVORK5CYII="/>
+          </g>
+        </g>
+        <text id="PASSPORT" transform="translate(17.013 78.64) rotate(-7.046)" fill="#192544" font-size="10" font-family="AeonikPro-Bold, Aeonik Pro" font-weight="700"><tspan x="0" y="0">PASSPORT</tspan></text>
+      </g>
+      <path id="Path_6127" data-name="Path 6127" d="M42.648,80.723s27.669-6.884,41.473-18.7c.1-.086.1-.079.1-.079a162.788,162.788,0,0,1-16.788,2.379C67.334,64.328,61.677,69.708,42.648,80.723Z" transform="translate(2.422 5.393)" fill="#192544"/>
+      <path id="Path_6128" data-name="Path 6128" d="M40.515,82.564l4.834-17.558S72.373,57,89.51,48.506C89.51,48.506,55.885,74.83,40.515,82.564Z" transform="translate(2.069 3.17)" fill="#192544"/>
+      <g id="Group_9201" data-name="Group 9201" transform="translate(54.422 36.97)">
+        <g id="Group_9200" data-name="Group 9200">
+          <rect id="Rectangle_17441" data-name="Rectangle 17441" width="61.719" height="90.092" rx="5.442" transform="translate(8.831) rotate(5.626)" fill="#fff" stroke="#0792d4" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+        <text id="PASSPORT-2" data-name="PASSPORT" transform="matrix(0.995, 0.098, -0.098, 0.995, 8.775, 65.976)" fill="#0092d5" font-size="10" font-family="AeonikPro-Bold, Aeonik Pro" font-weight="700"><tspan x="0" y="0">PASSPORT</tspan></text>
+      </g>
+      <path id="Path_6129" data-name="Path 6129" d="M61.57,82.072s28.5-.648,44.565-9.151c.117-.062.12-.055.12-.055a162.737,162.737,0,0,1-16.9-1.362C89.25,71.491,82.551,75.5,61.57,82.072Z" transform="translate(5.553 6.976)" fill="#0092d5"/>
+      <path id="Path_6130" data-name="Path 6130" d="M59.56,82.977l8.567-16.069s28.124-1.889,46.706-6.412C114.833,60.495,76.252,78.8,59.56,82.977Z" transform="translate(5.221 5.154)" fill="#0092d5"/>
+    </g>
+  </g>
+</svg>

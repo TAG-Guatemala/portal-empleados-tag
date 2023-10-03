@@ -233,7 +233,7 @@ $(document).ready(function () {
 })
 
 // Función para reegresar al home de portal de empleados
-let portalEmpledos = "../../es-gt/portal-de-empleados/portal-de-empleados.html"
+let portalEmpledos = "../../es-gt/portal-de-empleados/index.html"
 
 function regresarPortalEmpleados(e) {
     window.location.href = portalEmpledos;

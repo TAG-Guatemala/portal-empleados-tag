@@ -2490,6 +2490,19 @@ b {
     display: none;
 }
 
+.tag-info-pase-anual-mob {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-info-pase-anual-mob img {
+    width: 100%;
+}
+
+.tag-info-pase-anual-desk {
+    display: none;
+}
+
 /* Media Querys */
 
 /* Small devices (landscape phones, 576px and up) */
@@ -3289,6 +3302,36 @@ b {
 
     .tag-swiper-cumpleaños.swiper .tag-swiper-empleados-container-btns {
         display: block;
+    }
+
+    .tag-info-pase-anual-mob {
+        display: none;
+    }
+    
+    .tag-info-pase-anual-desk {
+        display: flex;
+        margin-top: 46px;
+    }
+
+    .tag-pas-an-img-1 {
+        width: 100%;
+    }
+    .tag-pas-an-img-2 {
+        position: relative;
+        top: 2px;
+        width: 85%;
+    }
+    .tag-pas-an-img-3 {
+        width: 91%;
+        position: relative;
+        left: -32px;
+        top: 0px;
+    }
+    .tag-pas-an-img-4 {
+        width: 85%;
+        position: relative;
+        left: -53px;
+        top: -46px;
     }
 
 }

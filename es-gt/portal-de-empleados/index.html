@@ -1514,6 +1514,123 @@
 			})
 		</script>
 	</section>
+	<!-- Balloons  -->
+	<section>
+		<div id="balloon-container">
+		</div>
+		<style>
+			body {
+				margin: 0;
+			}
+
+			#balloon-container {
+				position: fixed;
+				top:0;
+				z-index: 1000;
+				height: 100vh;
+				padding: 1em;
+				box-sizing: border-box;
+				display: flex;
+				flex-wrap: wrap;
+				overflow: hidden;
+				transition: opacity 500ms;
+			}
+
+			.balloon {
+				height: 125px;
+				width: 105px;
+				border-radius: 75% 75% 70% 70%;
+				position: relative;
+			}
+
+			.balloon:before {
+				content: "";
+				height: 75px;
+				width: 1px;
+				padding: 1px;
+				background-color: #FF1E33;
+				display: block;
+				position: absolute;
+				top: 125px;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+
+			.balloon:after {
+				content: "▲";
+				text-align: center;
+				display: block;
+				position: absolute;
+				color: inherit;
+				top: 120px;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+
+			@keyframes float {
+				from {transform: translateY(100vh);
+					opacity: 1;}
+				to {transform: translateY(-300vh);
+					opacity: 0;}
+			}
+		</style>
+		<script>
+			const balloonContainer = document.getElementById("balloon-container");
+
+			function random(num) {
+				return Math.floor(Math.random() * num);
+			}
+
+			function getRandomStyles() {
+				var r = 0
+				var g = 61
+				var b = 237
+				var mt = random(200);
+				var ml = random(50);
+				var dur = random(5) + 5;
+				return `
+  background-color: rgba(${r},${g},${b},1);
+  color: rgba(${r},${g},${b},0.7);
+  box-shadow: inset -7px -3px 10px rgba(${r - 10},${g - 10},${b - 10},0.7);
+  margin: ${mt}px 0 0 ${ml}px;
+  animation: float ${dur}s ease-in infinite
+  `;
+			}
+
+			function createBalloons(num) {
+				for (var i = num; i > 0; i--) {
+					var balloon = document.createElement("div");
+					balloon.className = "balloon";
+					balloon.style.cssText = getRandomStyles();
+					balloonContainer.append(balloon);
+				}
+			}
+
+			function removeBalloons() {
+				balloonContainer.style.opacity = 0;
+				setTimeout(() => {
+					balloonContainer.remove()
+				}, 500)
+			}
+
+			let globos = window.sessionStorage.getItem("globos")
+
+			if (globos !== "listos"){
+				window.addEventListener("load", () => {
+					createBalloons(30)
+				});
+
+				window.addEventListener("click", () => {
+					removeBalloons();
+				});
+				window.sessionStorage.setItem("globos", "listos")
+			}
+
+
+		</script>
+	</section>
 	<!-- footer  -->
 	<section>
 		<!--________________________________________ Footer Desk ________________________________________-->

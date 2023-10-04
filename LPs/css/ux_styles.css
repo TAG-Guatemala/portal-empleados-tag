@@ -2486,6 +2486,10 @@ b {
     margin-right: 5px !important;
 } */
 
+.tag-swiper-cumpleaños.swiper .tag-swiper-empleados-container-btns {
+    display: none;
+}
+
 /* Media Querys */
 
 /* Small devices (landscape phones, 576px and up) */
@@ -3277,6 +3281,14 @@ b {
     /* Aniversario */
     .tag-swiper-aniversario .swiper-wrapper {
         display: flex;
+    }
+
+    .tag-swiper-cumpleaños.swiper {
+        height: 570px;
+    }
+
+    .tag-swiper-cumpleaños.swiper .tag-swiper-empleados-container-btns {
+        display: block;
     }
 
 }

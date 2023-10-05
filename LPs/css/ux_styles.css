@@ -2272,7 +2272,7 @@ b {
 /* Seccion de cumpleaños */
 
 .tag-swiper-cumpleaños {
-    margin-top: 5%;
+    margin: 5% auto;
 }
 
 .tag-swiper-cumpleaños .swiper-wrapper {
@@ -3282,6 +3282,8 @@ b {
     }
 
     /* Seccion de cumpleaños */
+        /* Estilos del botones swiper de cumpleaños */
+
 
     .tag-swiper-cumpleaños .swiper-wrapper {
         display: flex;
@@ -3291,17 +3293,86 @@ b {
         border-right: 1px solid var(--tag-gray-fly);
     }
 
+    /* .tag-swiper-cumpleaños.swiper {
+        height: 570px;
+    } */
+
+    .tag-swiper-cumpleaños.swiper .tag-swiper-empleados-container-btns {
+        display: block;
+        height: 5px;
+    }
+
+    .tag-swiper-cumpleaños .swiper-button-next {
+        position: relative;
+        margin-top: 0;
+        left: 89%;
+        top: -369px;
+        border: 2px solid var(--tag-blue-light);
+        background: var(--tag-white);
+        opacity: 0.7;
+    }
+
+    .tag-swiper-cumpleaños .swiper-button-prev {
+        position: relative;
+        left: 0%;
+        margin-bottom: 0;
+        top: -411px;
+        border: 2px solid var(--tag-blue-light);
+        background: var(--tag-white);
+        opacity: 0.7;
+    }
+
+    .tag-swiper-cumpleaños .swiper-button-prev:after, 
+    .tag-swiper-cumpleaños .swiper-button-next:after {
+        color: var(--tag-blue-light);
+    }
+
     /* Aniversario */
+           /* Estilos del botones swiper de cumpleaños */
     .tag-swiper-aniversario .swiper-wrapper {
         display: flex;
     }
 
-    .tag-swiper-cumpleaños.swiper {
-        height: 570px;
+    .tag-swiper-aniversario .swiper-wrapper {
+        display: flex;
     }
 
-    .tag-swiper-cumpleaños.swiper .tag-swiper-empleados-container-btns {
+    .tag-swiper-aniversario.swiper {
+        height: 370px;
+    }
+
+    .tag-swiper-aniversario.swiper .tag-swiper-empleados-container-btns {
         display: block;
+        height: 5px;
+    }
+
+    .tag-swiper-aniversario .swiper-button-next {
+        position: relative;
+        margin-top: 0;
+        left: 92%;
+        bottom: 230px;
+        border: 1px solid var(--tag-blue-light);
+        background: var(--tag-white);
+        opacity: 0.5;
+    }
+
+    .tag-swiper-aniversario .swiper-button-prev {
+        position: relative;
+        left: 0%;
+        margin-bottom: 0;
+        top: -272px;
+        border: 1px solid var(--tag-blue-light);
+        background: var(--tag-white);
+        opacity: 0.5;
+    }
+
+    .tag-swiper-aniversario  .swiper-scrollbar-drag {
+        background: var(--tag-blue-light);
+    }
+
+    .tag-swiper-aniversario .swiper-button-prev:after, 
+    .tag-swiper-aniversario .swiper-button-next:after {
+        color: var(--tag-blue-light);
     }
 
     .tag-info-pase-anual-mob {
@@ -3332,6 +3403,32 @@ b {
         position: relative;
         left: -53px;
         top: -46px;
+    }
+
+    /* Estilos para imágenes de venta de empleados */
+
+    .tag-images-inf-ventas-emp  .tag-info-pase-anual-desk {
+        margin-top: 0px;
+    }
+    
+    .tag-images-inf-ventas-emp .tag-pas-an-img-2 {
+        position: relative;
+        top: -1px;
+        width: 92%;
+    }
+
+    .tag-images-inf-ventas-emp .tag-pas-an-img-3 {
+        width: 92%;
+        position: relative;
+        left: -17px;
+        top: 1px;
+    }
+
+    .tag-images-inf-ventas-emp .tag-pas-an-img-4 {
+        width: 75%;
+        position: relative;
+        left: -34px;
+        top: -1px;
     }
 
 }
